@@ -4,7 +4,13 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 body,
+main,
 input,
 textarea,
 select,
@@ -14,8 +20,8 @@ button {
   font: $font-size $font-family;
 }
 
-body {
-  margin: 2em auto;
+main {
+  margin: auto;
   max-width: $viewport-width;
   @media (max-width: $viewport-width) {
     margin: .5em 1em;
@@ -24,6 +30,107 @@ body {
 
 a {
   color: $primary-action-color;
+  &:hover,
+  &:focus {
+    color: $primary-action-focus-color;
+  }
+}
+
+// Menu
+
+nav {
+  float: left;
+  display: block;
+	position: fixed;
+  background-color: $background-color;
+  box-shadow: 0 1px 4px -2px rgba(0,0,0,.3);
+  padding: 0;
+	top: 0;
+  margin: 0;
+	width: 100%;
+  z-index: 100;
+
+  // leave space for the fixed nav
+  ~ main {
+    margin-top: 4em;
+  }
+
+  .brand {
+    color: #000;
+    float: left;
+    margin: .5em;
+    font-size: 1.5em;
+  }
+
+	label {
+    display: none;
+    margin: .5em;
+    cursor: pointer;
+    &:before {
+      content: "☰";
+      font-size: 1.5em;
+    }
+    &:focus {
+        outline: none;
+    }
+	}
+  a {
+    text-decoration: none;
+  }
+	input {
+		display: none;
+	}
+  ul {
+    margin: 1em;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    li {
+      display: inline-block;
+      margin: 0 1em;
+    }
+  }
+  @media (max-width: $viewport-width) {
+    .brand {
+      font-size: 1.3em;
+    }
+    ul {
+      margin: 0;
+      max-height: 1px;
+      top: 0;
+      position: relative;
+      float: left;
+      clear: both;
+      transition: max-height .2s ease-out;
+      width: 100%;
+      li {
+        float: left;
+        margin: 0;
+        display: block;
+        width: 100%;
+        a {
+          display: inline-block;
+          width: 100%;
+          padding: 1em;
+          text-align: center;
+          &:hover,
+          &:focus {
+            background: #CCC;
+          }
+        }
+      }
+    }
+    label {
+      display: block;
+      float: right;
+      position: relative;
+    }
+    :checked {
+      ~ ul {
+        max-height: 230px;
+      }
+    }
+  }
 }
 
 // Table
@@ -80,7 +187,7 @@ textarea {
 button {
   background: $primary-action-color;
   border: none;
-  color: #FFF;
+  color: $action-font-color;
   cursor: pointer;
 
   &.alt {
