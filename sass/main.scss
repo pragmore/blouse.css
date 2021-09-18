@@ -1,5 +1,9 @@
 @import '_theme';
 
+* {
+  box-sizing: border-box;
+}
+
 body,
 input,
 textarea,
@@ -58,9 +62,13 @@ select,
 textarea,
 .message {
   border-radius: 10px;
-  box-sizing: border-box;
   padding: 10px;
   width: 100%;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  width: auto;
 }
 
 input,
@@ -88,6 +96,13 @@ button {
 
 .muted {
   color: $secondary-font-color;
+}
+
+.space {
+  margin-top: 2em;
+}
+.more-space {
+  margin-top: 4em;
 }
 
 // Messages
