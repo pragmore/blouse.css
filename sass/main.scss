@@ -22,6 +22,34 @@ a {
   color: $primary-action-color;
 }
 
+// Table
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border-bottom: 1px solid $secondary-font-color;
+  padding: .5em;
+  text-align: left;
+}
+
+tr {
+  &:first-child {
+    th{ 
+      border-color: $primary-font-color;
+      margin-bottom: .2em;
+    }
+  }
+  &:last-child {
+    td {
+     border-bottom-width:0;
+    }
+  }
+}
+
 // Form
 
 button,
