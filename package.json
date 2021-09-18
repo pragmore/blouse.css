@@ -1,0 +1,35 @@
+{
+  "name": "@pragmore/css",
+  "version": "0.1",
+  "description": "npm package for minimal css framework",
+  "keywords": [
+    "css",
+    "sass",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "author": "Rodrigo 'Albo' Arce <albo@pragmore.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pragmore/css.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "node-sass": "^6.0.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "scripts": {
+    "css-build": "node-sass --output-style compressed sass/main.scss dist/framework.css",
+    "css-watch": "npm run css-build -- --watch",
+    "js-build": "babel app --out-dir dist/",
+    "js-watch": "npm run js-build -- --watch",
+    "build": "npm run css-build && npm run js-build",
+    "start": "npm-run-all --parallel css-watch js-watch"
+  }
+}

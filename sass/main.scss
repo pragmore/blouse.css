@@ -1,0 +1,99 @@
+@import '_theme';
+
+body,
+input,
+textarea,
+select,
+button {
+  background: $background-color;
+  color: $primary-font-color;
+  font: $font-size $font-family;
+}
+
+body {
+  margin: 2em auto;
+  max-width: $viewport-width;
+  @media (max-width: $viewport-width) {
+    margin: .5em 1em;
+  }
+}
+
+a {
+  color: $primary-action-color;
+}
+
+// Form
+
+button,
+input,
+select,
+textarea,
+.message {
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid $secondary-font-color;
+}
+
+button {
+  background: $primary-action-color;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+
+  &.alt {
+    background: $secondary-action-color;
+  }
+}
+
+// Helpers
+
+.center {
+  text-align: center;
+}
+
+.muted {
+  color: $secondary-font-color;
+}
+
+// Messages
+
+.message {
+  font-size: .8em;
+}
+
+.alert {
+  font-size: 1.2em;
+  left: 0;
+  margin: 0;
+  position: fixed;
+  padding: 1em;
+  top: 0;
+  width: 100%;
+}
+
+.ok {
+  background: #d1e7dd;
+  color: #0f5132;
+}
+
+.err {
+  background: #f8d7da;
+  color: #842029;
+}
+
+.warn {
+  background: #fff3cd;
+  color: #664d03;
+}
+
+.info {
+  background: #cff4fc;
+  color: #055160;
+}
