@@ -1,14 +1,31 @@
 <!doctype html>
 <html lang="es">
 <head>
-<title>De la compu al celu</title>
+<title>A minimal CSS framework</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖌️ </text></svg>">
 <link rel="stylesheet" href="dist/framework.css" crossorigin="anonymous">
 </head>
-  <body>
-    <h1 class="center">A minimal CSS framework</h1>
+<body>
+
+<div class="nav">
+	<input type="checkbox" id="menu-toggle" aria-hidden="true" />
+	<label for="menu-toggle" aria-hidden="true">
+		<span></span>
+		<span></span>
+		<span></span>
+	</label>
+	<nav role="navigation">
+		<ul>
+			<li><a href="?item=1">Item 1</a></li>
+			<li><a href="?item=2">Item 2</a></li>
+			<li><a href="?item=3">Item 3</a></li>
+		</ul>
+	</nav>
+</div>
+
+<h1 class="center">A minimal CSS framework</h1>
 <p>Another mobile first CSS framework. No reset, no extra classes. Try to use as much HTML5 and default styles as you can.</p>
 <p>Developed by <a href="https://pragmore.com" target="_blank">Pragmore</a>.</p>
 
