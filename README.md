@@ -1,6 +1,6 @@
-# A minimal CSS framework
+# A lightweight CSS framework
 
-Another mobile first CSS framework. No reset, no extra classes. Try to use as much HTML5 and default styles as you can.
+A lightweight mobile first CSS framework. No reset, no extra classes. Less than **1Kb** gzipped.
 
 **[See it live in Codepen](https://codepen.io/albo-ar/pen/YzQaWoK?editors=1000)**
 
