@@ -14,7 +14,8 @@ main,
 input,
 textarea,
 select,
-button {
+button,
+.btn {
   background: $background-color;
   color: $primary-font-color;
   font: $font-size $font-family;
@@ -30,9 +31,11 @@ main {
 
 a {
   color: $primary-action-color;
+}
+a, .btn, button {
   &:hover,
   &:focus {
-    color: $primary-action-focus-color;
+    opacity: .8;
   }
 }
 
@@ -115,7 +118,8 @@ nav {
           text-align: center;
           &:hover,
           &:focus {
-            background: #CCC;
+            background: $primary-font-color;
+            color: $background-color;
           }
         }
       }
@@ -167,10 +171,16 @@ button,
 input,
 select,
 textarea,
+label.btn,
 .msg {
   border-radius: 10px;
   padding: 10px;
   width: 100%;
+}
+.btn {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 input[type=checkbox],
@@ -184,18 +194,35 @@ textarea {
   border: 1px solid $secondary-font-color;
 }
 
-button {
-  background: $primary-action-color;
+input[type=file] {
+  border: 0;
+}
+
+button,
+.btn {
   border: none;
   color: $action-font-color;
   cursor: pointer;
-
+  text-align: center;
+  background: $secondary-font-color;
+  &.primary {
+    background: $primary-action-color;
+  }
   &.alt {
     background: $secondary-action-color;
   }
 }
+a.btn {
+  text-decoration: none;
+  color: $action-font-color;
+}
 
 // Helpers
+
+.hide {
+  visibility: hidden;
+  display: none;
+}
 
 .center {
   text-align: center;

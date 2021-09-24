@@ -24,7 +24,10 @@
 <main>
 
   <p>Another mobile first CSS framework. No reset, no extra classes. Try to use as much HTML5 and default styles as you can.</p>
-  <p>Developed by <a href="https://pragmore.com" target="_blank">Pragmore</a>.</p>
+
+  <h2 class="space">Links</h2>
+  <p>This is a <a href="#">link</a></p>
+  <p>This is a <a href="#" class="btn">button link</a></p>
 
   <h2 class="space">List and Tables</h2>
   <ul>
@@ -85,6 +88,7 @@
   <p class="muted">This text is muted.</p>
   <p class="space">This text has a space on top.</p>
   <p class="more-space">This text has more space on top.</p>
+  <p>The next text is hidden: <span class="hide">hidden text<span></p>
 
   <h2 class="space">Form and msgs</h2>
   <form>
@@ -110,6 +114,11 @@
         <option>Empanada</option>
       </select>
     </p>
+    <p class="more-space">Choose your file to upload</p>
+    <p>
+      <label class="btn" for="file">Select file</label>
+      <input type="file" class="hide" name="file" id="file">
+    </p>
     <p class="more-space">Choose your drink:</p>
     <p>
       <label>
@@ -129,7 +138,7 @@
         Accept terms and conditions
       </label>
     </p>
-    <p><button>Save</button></p>
+    <p><button class="primary">Save</button></p>
     <p class="alert ok" hidden>Saved ok!</p>
   </form>
 </main>
