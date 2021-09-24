@@ -45,8 +45,8 @@ nav {
   float: left;
   display: block;
 	position: fixed;
-  background-color: $background-color;
-  box-shadow: 0 1px 4px -2px rgba(0,0,0,.3);
+  background: $background-color;
+  box-shadow: 0 1px 4px -2px rgba(0,0,0,.5);
   padding: 0;
 	top: 0;
   margin: 0;
@@ -72,9 +72,6 @@ nav {
     &:before {
       content: "☰";
       font-size: 1.5em;
-    }
-    &:focus {
-        outline: none;
     }
 	}
   a {
@@ -104,15 +101,14 @@ nav {
       position: relative;
       float: left;
       clear: both;
-      transition: max-height .2s ease-out;
+      transition: max-height .2s;
       width: 100%;
       li {
         float: left;
         margin: 0;
-        display: block;
         width: 100%;
         a {
-          display: inline-block;
+          display: block;
           width: 100%;
           padding: 1em;
           text-align: center;
@@ -155,12 +151,11 @@ tr {
   &:first-child {
     th{ 
       border-color: $primary-font-color;
-      margin-bottom: .2em;
     }
   }
   &:last-child {
     td {
-     border-bottom-width:0;
+     border: 0;
     }
   }
 }
@@ -205,7 +200,7 @@ button,
   cursor: pointer;
   text-align: center;
   background: $secondary-font-color;
-  &.primary {
+  &.main {
     background: $primary-action-color;
   }
   &.alt {
@@ -220,7 +215,6 @@ a.btn {
 // Helpers
 
 .hide {
-  visibility: hidden;
   display: none;
 }
 
@@ -235,7 +229,7 @@ a.btn {
 .space {
   margin-top: 2em;
 }
-.more-space {
+.d-space {
   margin-top: 4em;
 }
 

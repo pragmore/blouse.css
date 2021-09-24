@@ -17,7 +17,7 @@ Add the following link in the `<head>`
 ### Forms
 
 ```html 
-<button class="primary">Primary button</button>
+<button class="main">Primary button</button>
 <button class="alt">Secondary button</button>
 <p class="msg ok" hidden>Operation successful</p>
 <p class="msg err" hidden>Operation error</p>
@@ -35,6 +35,6 @@ Add the following link in the `<head>`
 <p class="center">This text is align in the center.</p>    
 <p class="muted">This text is muted.</p>    
 <p class="space">This text has a space on top.</p>    
-<p class="more-space">This text has more space on top.</p>
+<p class="d-space">This text has double space on top.</p>
 <p class="hide">Hide this text</p>
 ```
