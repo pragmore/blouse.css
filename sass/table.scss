@@ -9,13 +9,11 @@ td {
   padding: .5em;
   text-align: left;
 }
+th { 
+  border-color: #000;
+}
 
 tr {
-  &:first-child {
-    th{ 
-      border-color: $primary-font-color;
-    }
-  }
   &:last-child {
     td {
      border: 0;

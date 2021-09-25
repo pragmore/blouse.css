@@ -80,7 +80,7 @@ nav {
     }
     :checked {
       ~ ul {
-        max-height: 230px;
+        max-height: 50em;
       }
     }
   }

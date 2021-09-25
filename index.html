@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="es">
 <head>
-<title>A lightweight CSS framework</title>
+<title>pragmore.css</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛴</text></svg>">
-<link rel="stylesheet" href="dist/framework.css" crossorigin="anonymous">
+<link rel="stylesheet" href="dist/pragmore.css" crossorigin="anonymous">
 </head>
 <body>
 
 <nav role="navigation">
 	<input type="checkbox" id="menu-toggle" aria-hidden="true" />
-  <a href="/">A lightweight CSS framework</a>
+  <a href="/">🛴 pragmore.css</a>
 	<label for="menu-toggle" aria-hidden="true"></label>
   <ul>
 			<li><a href="#services">Services</a></li>
@@ -21,11 +21,11 @@
 	</ul>
 </nav>
 
-<div class="alert info hide">This is an alert</div>
+<div class="alert info hide" aria-hidden="true">This is an alert</div>
 
 <main>
 
-  <p>A lightweight mobile first CSS framework. No reset, no extra classes. Less than <strong>1Kb</strong> gzipped (plus 5.2 Kb for the icons).</p>
+  <p>A lightweight mobile first CSS framework. No reset, no extra classes. Less than <strong>1.1Kb</strong> gzipped (plus 5.2 Kb for the icons).</p>
 
   <h2 class="space">Links</h2>
   <p>This is a <a href="#">link</a></p>
@@ -151,17 +151,31 @@
   
   <h2 class="space">Icons</h2>
   <ul>
-    <li>Twitter: <i class="tw"></i></li>
-    <li>Facebook: <i class="fb"></i></li>
-    <li>Github: <i class="gh"></i></li>
-    <li>Linkedin: <i class="lk"></i></li>
-    <li>WhatsApp: <i class="wa"></i></li>
-    <li>Telegram: <i class="tl"></i></li>
-    <li>Youtube: <i class="yt"></i></li>
-    <li>Instagram: <i class="ig"></i></li>
-    <li>Twitch: <i class="ti"></i></li>
+    <li>Twitter: <i class="tw" aria-hidden="true" title="Twitter"></i></li>
+    <li>Facebook: <i class="fb" aria-hidden="true" title="Facebook"></i></li>
+    <li>GitHub: <i class="gh" aria-hidden="true" title="GitHub"></i></li>
+    <li>LinkedIn: <i class="lk" aria-hidden="true" title="LinkedIn"></i></li>
+    <li>WhatsApp: <i class="wa" aria-hidden="true" title="WhatsApp"></i></li>
+    <li>Telegram: <i class="tl" aria-hidden="true" title="Telegram"></i></li>
+    <li>Youtube: <i class="yt" aria-hidden="true" title="Youtube"></i></li>
+    <li>Instagram: <i class="ig" aria-hidden="true" title="Instagram"></i></li>
+    <li>Twitch: <i class="ti" aria-hidden="true" title="Twitch"></i></li>
   </ul>
 
 </main>
+<footer>
+  <span>Developed by <a href="https://pragmore.com" target="_blank">Pragmore</a></span>
+  <span><a href="https://github.com/pragmore/css/blob/main/LICENSE" target="_blank">MIT Licence</a></span>
+  <span>
+    <a href="https://twitter.com/pragmore" target="_blank" aria-label="Twitter">
+      <i class="tw" aria-hidden="true" title="Twitter"></i>
+    </a>
+  </span>
+  <span>
+    <a href="https://github.com/pragmore" target="_blank" aria-label="GitHub">
+      <i class="gh" aria-hidden="true" title="GitHub"></i>
+    </a>
+  </span>
+</footer>
 </body>
 </html>
