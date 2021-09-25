@@ -9,7 +9,7 @@ A lightweight mobile first CSS framework. No reset, no extra classes. Less than 
 Add the following link in the `<head>`
 
 ```html  
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pragmore/css@latest/dist/framework.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pragmore/css@latest/dist/pragmore.css" crossorigin="anonymous">
 ```
 
 ## Documentation
