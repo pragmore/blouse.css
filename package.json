@@ -1,7 +1,7 @@
 {
   "name": "@pragmore/css",
   "version": "0.1.0",
-  "description": "npm package for minimal css framework",
+  "description": "npm package for a lightweight css framework",
   "keywords": [
     "css",
     "sass",
@@ -28,13 +28,15 @@
   },
   "scripts": {
     "livereload": "livereload -ee 'json'",
+    "font-build": "cp font/*.woff dist/",
     "css-build": "node-sass --output-style compressed sass/main.scss dist/framework.css",
+    "css-build-no-icons": "node-sass --output-style compressed sass/main-without-icons.scss dist/no-icons.css",
     "css-watch": "npm run css-build -- --watch",
     "js-build": "babel js --out-dir dist/",
     "js-watch": "npm run js-build -- --watch",
-    "build": "npm run css-build && npm run js-build",
+    "build": "npm run css-build && npm run js-build && npm run font-build && npm run css-build-no-icons",
     "serve": "http-server . -c-1",
-    "start": "npm-run-all --parallel livereload css-watch js-watch serve"
+    "start": "npm-run-all --parallel livereload css-watch js-watch font-build serve"
   },
   "dependencies": {
     "semver": "^6.3.0"

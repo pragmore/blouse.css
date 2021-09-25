@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+main,
+input,
+textarea,
+select,
+button {
+  background: $background-color;
+  color: $primary-font-color;
+  font: $font-size $font-family;
+}
+
+main {
+  margin: auto;
+  max-width: $viewport-width;
+  @media (max-width: $viewport-width) {
+    margin: .5em 1em;
+  }
+}
+
+a {
+  color: $primary-action-color;
+}
+a, .btn, button {
+  &:hover,
+  &:focus {
+    opacity: .8;
+  }
+}

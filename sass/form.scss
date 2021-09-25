@@ -1,0 +1,36 @@
+button,
+input,
+select,
+textarea,
+.btn,
+.msg {
+  border: 1px solid $secondary-font-color;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  width: auto;
+}
+
+button,
+.btn {
+  border: 0;
+  color: $action-font-color;
+  cursor: pointer;
+  text-align: center;
+  background: $secondary-font-color;
+  &.main {
+    background: $primary-action-color;
+  }
+  &.alt {
+    background: $secondary-action-color;
+  }
+}
+a.btn {
+  text-decoration: none;
+  color: $action-font-color;
+  width: auto;
+}

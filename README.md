@@ -1,6 +1,6 @@
 # A lightweight CSS framework
 
-A lightweight mobile first CSS framework. No reset, no extra classes. Less than **1Kb** gzipped.
+A lightweight mobile first CSS framework. No reset, no extra classes. Less than **1.1Kb** gzipped (plus 5.2 Kb for the icons).
 
 **[See it live in Codepen](https://codepen.io/albo-ar/pen/YzQaWoK?editors=1000)**
 
