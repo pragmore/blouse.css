@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+<head>
+<title>pragmore.css</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛴</text></svg>">
+<style>
+nav,.alert{position:fixed;top:0;margin:0;width:100%}*{box-sizing:border-box}body{margin:0;padding:0}body,main,input,textarea,select,button{background:#fff;color:#191017;font:14pt Helvetica,Arial,sans}main{margin:auto;max-width:991px}@media (max-width: 991px){main{margin:.5em 1em}}a{color:#4785AE}a:hover,a:focus,.btn:hover,.btn:focus,button:hover,button:focus{opacity:.8}nav a,h1 a,h2 a,h3 a,h4 a{text-decoration:none}nav{background:#fff;box-shadow:0 1px 4px -2px #000;padding:0;z-index:100}nav ~ main{margin-top:4em}nav>a{color:#000;float:left;margin:.5em;font-size:1.5em}nav label{display:none;margin:.5em;cursor:pointer}nav label:before{content:"☰";font-size:1.5em}nav input{display:none}nav ul{margin:1em;padding:0;overflow:hidden;float:right}nav li{display:inline-block;margin:0 1em}@media (max-width: 991px){nav ul{display:none}}.active{color:#AE76A6}.hide{display:none}.center{text-align:center}.muted{color:#6C757D}.space{margin-top:2em}.d-space{margin-top:4em}
+</style>
+<link rel="preload" href="dist/pragmore-non-critical.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="dist/pragmore-non-critical.css"></noscript>
+</head>
+<body>
+
+<nav role="navigation">
+	<input type="checkbox" id="menu-toggle" aria-hidden="true" />
+  <a href="/">🛴 pragmore.css</a>
+	<label for="menu-toggle" aria-hidden="true"></label>
+  <ul>
+			<li><a href="#services">Services</a></li>
+			<li><a href="#about">About us</a></li>
+			<li><a href="#blog">Blog</a></li>
+			<li><a href="#contact">Contact us</a></li>
+	</ul>
+</nav>
+
+<div class="alert info hide" aria-hidden="true">This is an alert</div>
+
+<main>
+
+  <p>A lightweight mobile first CSS framework. No reset, no extra classes. Less than <strong>1.1Kb</strong> gzipped (plus 5.2 Kb for the icons).</p>
+
+  <h2 class="space">Links</h2>
+  <p>This is a <a href="#">link</a></p>
+  <p>This is a <a href="#" class="btn">button link</a></p>
+  <p class="space">
+    There is also a <a href="#" class="btn main">Main action</a>
+    and an <a href="#" class="btn alt">Alternative action</a>
+  </p>
+  <h3><a href="#">Title links looks like this</a></h3>
+
+  <h2 class="space">List and Tables</h2>
+  <ul>
+    <li>Hello</li>
+    <li>Hi</li>
+    <li>How you doing?</li>
+    <li>Hola</li>
+  </ul>
+
+  <ol>
+    <li>First</li>
+    <li>Second</li>
+    <li>Third</li>
+  </ol>
+
+  <table>
+    <tr>
+      <th>Team</th>
+      <th>Win games</th>
+      <th>Lost games</th>
+    </tr>
+    <tr>
+      <td>Blue Barracudas</td>
+      <td>8</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Green Monkeys</td>
+      <td>7</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Silver Snakes</td>
+      <td>6</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Red Jaguars</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Orange Iguanas</td>
+      <td>3</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Purple Parrots</td>
+      <td>1</td>
+      <td>9</td>
+    </tr>
+  </table>
+
+  <h2 class="space">Helpers</h2>
+  <p><strong>This text is bold.</strong></p>
+  <p><em>This text is in italic.</em></p>
+  <p class="center">This text is align in the center.</p>
+  <p class="muted">This text is muted.</p>
+  <p class="space">This text has a space on top.</p>
+  <p class="d-space">This text has more space on top.</p>
+  <p>The next text is hidden: <span class="hide">hidden text</span></p>
+
+  <h2 class="space">Form and messages</h2>
+  <p><a href="#">Toggle alert</a></p>
+  <form>
+    <p>
+      <input name="title" id="title" placeholder="Post title" aria-label="Post title" />
+    </p>
+    <p>
+      <label for="post">Write the post content</label>
+    </p>
+    <p class="msg warn">
+      Your post content is empty
+    </p>
+    <p>
+      <textarea name="post" id="post"></textarea>
+    </p>
+    <p>
+      <label for="food">Select your favorite food</label>
+    </p>
+    <p>
+      <select name="food" id="food">
+        <option>Pizza</option>
+        <option>Burger</option>
+        <option>Empanada</option>
+      </select>
+    </p>
+    <p>
+      <label for="file">Select file</label>
+      <input type="file" name="file" id="file">
+    </p>
+    <p class="d-space">Choose your file to upload</p>
+    <p>
+      <label class="btn" for="file-button">Select file</label>
+      <input type="file" class="hide" name="file-button" id="file-button">
+    </p>
+    <p class="d-space">Choose your drink:</p>
+    <p>
+      <label>
+        <input type="radio" name="drink" value="water">
+        Water
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="radio" name="drink" value="soda">
+        Soda
+      </label>
+    </p>
+    <p class="d-space">
+      <label>
+        <input type="checkbox" value="1" name="terms">
+        Accept terms and conditions
+      </label>
+    </p>
+    <p><button class="main">Save</button></p>
+    <p class="alert ok" hidden>Saved ok!</p>
+  </form>
+  
+  <h2 class="space">Icons</h2>
+  <ul>
+    <li>Twitter: <i class="tw" aria-hidden="true" title="Twitter"></i></li>
+    <li>Facebook: <i class="fb" aria-hidden="true" title="Facebook"></i></li>
+    <li>GitHub: <i class="gh" aria-hidden="true" title="GitHub"></i></li>
+    <li>LinkedIn: <i class="lk" aria-hidden="true" title="LinkedIn"></i></li>
+    <li>WhatsApp: <i class="wa" aria-hidden="true" title="WhatsApp"></i></li>
+    <li>Telegram: <i class="tl" aria-hidden="true" title="Telegram"></i></li>
+    <li>Youtube: <i class="yt" aria-hidden="true" title="Youtube"></i></li>
+    <li>Instagram: <i class="ig" aria-hidden="true" title="Instagram"></i></li>
+    <li>Twitch: <i class="ti" aria-hidden="true" title="Twitch"></i></li>
+  </ul>
+
+</main>
+<footer>
+  <span>Developed by <a href="https://pragmore.com" target="_blank">Pragmore</a></span>
+  <span><a href="https://github.com/pragmore/css/blob/main/LICENSE" target="_blank">MIT Licence</a></span>
+  <span>
+    <a href="https://twitter.com/pragmore" target="_blank" aria-label="Twitter">
+      <i class="tw" aria-hidden="true" title="Twitter"></i>
+    </a>
+  </span>
+  <span>
+    <a href="https://github.com/pragmore" target="_blank" aria-label="GitHub">
+      <i class="gh" aria-hidden="true" title="GitHub"></i>
+    </a>
+  </span>
+</footer>
+</body>
+</html>

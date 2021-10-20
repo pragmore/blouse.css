@@ -1,0 +1,45 @@
+
+nav {
+  @media (max-width: $viewport-width) {
+    & > a {
+      font-size: 1.3em;
+    }
+    ul {
+      display: inherit;
+      margin: 0;
+      max-height: 1px;
+      top: 0;
+      position: relative;
+      float: left;
+      clear: both;
+      transition: .2s;
+      width: 100%;
+    }
+    li {
+      float: left;
+      margin: 0;
+      width: 100%;
+      a {
+        display: block;
+        width: 100%;
+        padding: 1em;
+        text-align: center;
+        &:hover,
+        &:focus {
+          background: $primary-font-color;
+          color: $background-color;
+        }
+      }
+    }
+    label {
+      display: block;
+      float: right;
+      position: relative;
+    }
+    :checked {
+      ~ ul {
+        max-height: 50em;
+      }
+    }
+  }
+}
