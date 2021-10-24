@@ -1,24 +1,25 @@
+@import '_theme';
+
 * {
   box-sizing: border-box;
 }
 
 body {
+  background: $background-color;
+  color: $primary-font-color;
   display: flex;
   flex-direction: column;
+  font: $font-size $font-family;
   height: 100vh;
   margin: 0;
   padding: 0;
 }
 
-body,
-main,
 input,
 textarea,
 select,
 button {
-  background: $background-color;
-  color: $primary-font-color;
-  font: $font-size $font-family;
+  font: inherit;
 }
 
 main {
