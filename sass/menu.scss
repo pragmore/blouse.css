@@ -12,7 +12,7 @@ nav {
   }
 
   & > a {
-    color: #000;
+    color: $primary-font-color;
     float: left;
     margin: .5em;
     font-size: 1.5em;
@@ -48,7 +48,6 @@ nav {
       margin: 0;
       max-height: 1px;
       top: 0;
-      position: relative;
       float: left;
       clear: both;
       transition: .2s;
