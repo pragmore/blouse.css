@@ -1,5 +1,9 @@
 @import '_fixed';
 
+nav ~ main, .mt4 {
+  margin-top: 4em;
+}
+
 nav {
   background: $background-color;
   box-shadow: 0 1px 4px -2px #000;
@@ -7,9 +11,6 @@ nav {
   z-index: 100;
 
   // leave space for the fixed nav
-  ~ main {
-    margin-top: 4em;
-  }
 
   & > a {
     color: $primary-font-color;

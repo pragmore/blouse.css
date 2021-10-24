@@ -12,11 +12,3 @@ td {
 th { 
   border-color: #000;
 }
-
-tr {
-  &:last-child {
-    td {
-     border: 0;
-    }
-  }
-}
