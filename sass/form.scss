@@ -14,6 +14,10 @@ input[type=checkbox],
 input[type=radio],
 a.btn {
   width: auto;
+  /* This attributes are here to save space */
+  display: inline-block;
+  margin: .1em;
+  text-decoration: none;
 }
 
 button,
@@ -29,8 +33,4 @@ button,
   &.alt {
     background: $secondary-action-color;
   }
-}
-a.btn {
-  text-decoration: none;
-  color: $action-font-color;
 }
