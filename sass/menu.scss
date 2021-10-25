@@ -82,6 +82,12 @@ nav {
       }
     }
   }
+  @media (prefers-color-scheme: dark) {
+    background: $primary-font-color;
+    & > a {
+      color: $background-color;
+    }
+  }
 }
 
 .active {

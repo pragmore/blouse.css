@@ -68,3 +68,13 @@ blockquote {
 blockquote > footer {
   margin-top: 1.5em;
 }
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: $primary-font-color;
+    color: $background-color;
+  }
+  a {
+    color: lighten($primary-action-color, 30%);
+  }
+}
