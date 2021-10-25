@@ -6,9 +6,10 @@ A lightweight mobile first CSS framework. No reset, no extra classes. Less than 
 
 ## How to use
 
-Add the following link in the `<head>`
+Add the following tags in the `<head>`
 
 ```html  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pragmore/css@latest/dist/pragmore.css" crossorigin="anonymous">
 ```
 
