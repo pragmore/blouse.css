@@ -26,12 +26,12 @@
 <div class="alert info" hidden aria-hidden="true">This is an alert</div>
 
 <main>
-
-  <p>A lightweight mobile first CSS framework. No reset, no extra classes. Less than <strong>0.9Kb</strong> compressed plus 5.2 Kb for the icons font.</p>
-  <p>To use it just copy this line in the <code>&lt;head&gt;</code> tag</p>
-  <code>
-    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pragmore/css@latest/dist/pragmore.css"  crossorigin="anonymous" media="screen"&gt;
-  </code>
+  <p>A lightweight mobile first CSS framework. No reset, no extra classes. Less than <strong>1Kb</strong> compressed plus 5.2 Kb for the icons.</p>
+  <p>To use it just copy this lines in the <code>&lt;head&gt;</code> tag</p>
+  <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+&lt;link rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/gh/pragmore/css@latest/dist/pragmore.css"
+  crossorigin="anonymous" media="screen"&gt;</code></pre>
 
   <h2 id="text" class="mt2">Text</h2>
   <p><strong>This text is bold.</strong></p>
@@ -48,6 +48,19 @@
     and an <a href="#" class="btn alt">Alternative action</a>
   </p>
   <h3><a href="#">Title links looks like this</a></h3>
+  <blockquote>This is a blockquote</blockquote>
+  <blockquote cite='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote'>
+    "The HTML blockquote Element (or HTML Block Quotation Element) indicates
+    that the enclosed text is an extended quotation. Usually, this is
+    rendered visually by indentation (see
+    <a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote#Usage_notes'>Notes</a>
+    for how to change it). A URL for the source of the quotation may be given using the
+    <code>cite</code> attribute, while a text representation of the source
+    can be given using the <code>&ltcite&gt</code> cite element."
+    <footer>
+      <cite>MDN, "The Block Quotation element"</cite>
+    </footer>
+  </blockquote>
 
   <h2 id="list-and-tables" class="mt2">List and Tables</h2>
   <ul>
