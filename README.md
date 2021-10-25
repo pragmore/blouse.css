@@ -63,10 +63,10 @@ Add the following tags in the `<head>`
 <a class="btn" href="#">This is a button</a>
 <a class="btn main" href="#">Main button</a>
 <a class="btn alt" href="#">Alternative button</a>
-<p class="center">This text is align in the center.</p>    
+<p class="text-center">This text is align in the center.</p>
 <p class="mute">This text is muted.</p>    
-<p class="mt2">This text has a space on top.</p>    
-<p class="mt4">This text has double space on top.</p>
+<p class="mt-2">This text has a space on top.</p>
+<p class="mt-4">This text has double space on top.</p>
 ```
 
 ### Icons
