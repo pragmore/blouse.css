@@ -14,29 +14,42 @@
   <a href="/">🛴 pragmore.css</a>
 	<label for="menu-toggle" aria-hidden="true"></label>
   <ul>
-			<li><a href="#services">Services</a></li>
-			<li><a href="#about">About us</a></li>
-			<li><a href="#blog">Blog</a></li>
-			<li><a href="#contact">Contact us</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#text">Text</a></li>
+			<li><a href="#list-and-tables">List and Tables</a></li>
+			<li><a href="#form">Form</a></li>
+			<li><a href="#messages">Messages</a></li>
+			<li><a href="#icons">Icons</a></li>
 	</ul>
 </nav>
 
-<div class="alert info hide" aria-hidden="true">This is an alert</div>
+<div class="alert info" hidden aria-hidden="true">This is an alert</div>
 
 <main>
 
-  <p>A lightweight mobile first CSS framework. No reset, no extra classes. Less than <strong>1.1Kb</strong> gzipped (plus 5.2 Kb for the icons).</p>
+  <p>A lightweight mobile first CSS framework. No reset, no extra classes. Less than <strong>0.9Kb</strong> compressed plus 5.2 Kb for the icons font.</p>
+  <p>To use it just copy this line in the <code>&lt;head&gt;</code> tag</p>
+  <code>
+    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pragmore/css@latest/dist/pragmore.css"  crossorigin="anonymous" media="screen"&gt;
+  </code>
 
-  <h2 class="space">Links</h2>
+  <h2 id="text" class="mt2">Text</h2>
+  <p><strong>This text is bold.</strong></p>
+  <p><em>This text is in italic.</em></p>
+  <p>The next text is hidden: <span hidden>this one</span></p>
+  <p class="center">This text is aligned in the center.</p>
+  <p class="mute">This text is muted.</p>
+  <p class="mt2">This text has a space on top.</p>
+  <p class="mt4">This text has more space on top.</p>
   <p>This is a <a href="#">link</a></p>
   <p>This is a <a href="#" class="btn">button link</a></p>
-  <p class="space">
+  <p class="mt2">
     There is also a <a href="#" class="btn main">Main action</a>
     and an <a href="#" class="btn alt">Alternative action</a>
   </p>
   <h3><a href="#">Title links looks like this</a></h3>
 
-  <h2 class="space">List and Tables</h2>
+  <h2 id="list-and-tables" class="mt2">List and Tables</h2>
   <ul>
     <li>Hello</li>
     <li>Hi</li>
@@ -88,16 +101,7 @@
     </tr>
   </table>
 
-  <h2 class="space">Helpers</h2>
-  <p><strong>This text is bold.</strong></p>
-  <p><em>This text is in italic.</em></p>
-  <p class="center">This text is align in the center.</p>
-  <p class="muted">This text is muted.</p>
-  <p class="space">This text has a space on top.</p>
-  <p class="d-space">This text has more space on top.</p>
-  <p>The next text is hidden: <span class="hide">hidden text</span></p>
-
-  <h2 class="space">Form and messages</h2>
+  <h2 id="form" class="mt2">Form</h2>
   <p><a href="#">Toggle alert</a></p>
   <form>
     <p>
@@ -126,12 +130,12 @@
       <label for="file">Select file</label>
       <input type="file" name="file" id="file">
     </p>
-    <p class="d-space">Choose your file to upload</p>
+    <p class="mt4">Choose your file to upload</p>
     <p>
       <label class="btn" for="file-button">Select file</label>
-      <input type="file" class="hide" name="file-button" id="file-button">
+      <input type="file" hidden name="file-button" id="file-button">
     </p>
-    <p class="d-space">Choose your drink:</p>
+    <p class="mt4">Choose your drink:</p>
     <p>
       <label>
         <input type="radio" name="drink" value="water">
@@ -144,7 +148,7 @@
         Soda
       </label>
     </p>
-    <p class="d-space">
+    <p class="mt4">
       <label>
         <input type="checkbox" value="1" name="terms">
         Accept terms and conditions
@@ -154,12 +158,26 @@
     <p class="alert ok" hidden>Saved ok!</p>
   </form>
   
-  <h2 class="space">Icons</h2>
+  <h2 id="messages" class="mt2">Messages</h2>
+  <p class="msg ok">
+    Ok message
+  </p>
+  <p class="msg err">
+    Error message
+  </p>
+  <p class="msg info">
+    Info message
+  </p>
+  <p class="msg warn">
+    Warning message
+  </p>
+  
+  <h2 id="icons" class="mt2">Icons</h2>
   <ul>
     <li>Twitter: <i class="tw" aria-hidden="true" title="Twitter"></i></li>
     <li>Facebook: <i class="fb" aria-hidden="true" title="Facebook"></i></li>
     <li>GitHub: <i class="gh" aria-hidden="true" title="GitHub"></i></li>
-    <li>LinkedIn: <i class="lk" aria-hidden="true" title="LinkedIn"></i></li>
+    <li>LinkedIn: <i class="in" aria-hidden="true" title="LinkedIn"></i></li>
     <li>WhatsApp: <i class="wa" aria-hidden="true" title="WhatsApp"></i></li>
     <li>Telegram: <i class="tl" aria-hidden="true" title="Telegram"></i></li>
     <li>Youtube: <i class="yt" aria-hidden="true" title="Youtube"></i></li>

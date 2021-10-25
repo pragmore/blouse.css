@@ -1,21 +1,19 @@
 @font-face {
-  font-family: "si";
+  font-family: si;
   src: url("si.woff");
 }
 
 i:before {
   font: 1em si;
   display: inline-block;
-  width: 1em;
-  text-align: center;
 }
 
-i.tw:before { content: 'T'; } /* '' */
-i.gh:before { content: 'G'; } /* '' */
-i.yt:before { content: 'Y'; } /* '' */
-i.ig:before { content: 'I'; } /* '' */
-i.wa:before { content: 'W'; } /* '' */
-i.fb:before { content: 'F'; } /* '' */
-i.lk:before { content: 'L'; } /* '' */
-i.tl:before { content: 'E'; } /* '' */
-i.ti:before { content: 'C'; } /* '' */
+i.tw:before { content: 'T'; }
+i.gh:before { content: 'G'; }
+i.yt:before { content: 'Y'; }
+i.ig:before { content: 'I'; }
+i.wa:before { content: 'W'; }
+i.fb:before { content: 'F'; }
+i.in:before { content: 'L'; }
+i.tl:before { content: 'E'; }
+i.ti:before { content: 'C'; }

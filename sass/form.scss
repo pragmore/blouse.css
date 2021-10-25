@@ -3,11 +3,20 @@ input,
 select,
 textarea,
 .btn,
-.msg {
+.msg,
+code {
   border: 1px solid $secondary-font-color;
   border-radius: 10px;
   padding: 10px;
   width: 100%;
+}
+
+code {
+  background: $secondary-font-color;
+  border: 0 ;
+  color: $background-color;
+  width: auto;
+  display: inline-block;
 }
 
 input[type=checkbox],
