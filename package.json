@@ -1,7 +1,7 @@
 {
-  "name": "@pragmore/css",
-  "version": "0.1.0",
-  "description": "npm package for a lightweight css framework",
+  "name": "blouse.css",
+  "version": "1.0.0",
+  "description": "a lightweight mobile first css framework",
   "keywords": [
     "css",
     "sass",
@@ -14,7 +14,7 @@
   "author": "Rodrigo 'Albo' Arce <albo@pragmore.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pragmore/css.git"
+    "url": "git+https://github.com/4lb0/blouse.css.git"
   },
   "license": "MIT",
   "devDependencies": {
@@ -29,8 +29,8 @@
   "scripts": {
     "livereload": "livereload -ee 'json'",
     "font-build": "cp font/*.woff dist/",
-    "css-build": "node-sass --output-style compressed sass/main.scss dist/pragmore.css",
-    "css-build-no-icons": "node-sass --output-style compressed sass/main-no-icons.scss dist/pragmore-no-icons.css",
+    "css-build": "node-sass --output-style compressed sass/main.scss dist/blouse.css",
+    "css-build-no-icons": "node-sass --output-style compressed sass/main-no-icons.scss dist/blouse-no-icons.css",
     "css-watch": "npm run css-build -- --watch",
     "js-build": "babel js --out-dir dist/",
     "js-watch": "npm run js-build -- --watch",

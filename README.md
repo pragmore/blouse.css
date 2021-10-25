@@ -1,4 +1,4 @@
-# 🛴 pragmore.css
+# 👚 blouse.css
 
 A lightweight mobile first CSS framework. No reset, no extra classes. Less than <strong>1Kb</strong> compressed plus 5.2 Kb for the icons.
 
@@ -10,7 +10,7 @@ Add the following tags in the `<head>`
 
 ```html  
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pragmore/css@latest/dist/pragmore.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/4lb0/blouse.css@latest/dist/blouse.css" crossorigin="anonymous">
 ```
 
 ## Documentation
