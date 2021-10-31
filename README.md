@@ -18,7 +18,7 @@ Add the following tags in the `<head>`
 ### Menu
 
 ```html 
-<nav role="navigation">
+<nav>
   <input type="checkbox" id="menu-toggle" aria-hidden="true" />
   <a href="/">My brand</a>
 	<label for="menu-toggle" aria-hidden="true"></label>
