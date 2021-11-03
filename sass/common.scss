@@ -27,9 +27,6 @@ button {
 main {
   margin: auto;
   max-width: $viewport-width;
-  @media (max-width: $viewport-width) {
-    margin: .5em 1em;
-  }
 }
 
 a {
@@ -74,5 +71,11 @@ blockquote > footer {
   }
   a {
     color: lighten($primary-action-color, 30%);
+  }
+  nav {
+    background: $primary-font-color;
+    & > a {
+      color: $background-color;
+    }
   }
 }

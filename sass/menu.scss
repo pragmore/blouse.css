@@ -23,14 +23,15 @@ nav {
 	label {
     display: none;
     cursor: pointer;
-    &:before {
-      content: "☰";
-      font-size: 1.5em;
-    }
 	}
 	input {
 		display: none;
 	}
+  
+
+}
+
+nav {
   ul {
     margin: 1em;
     padding: 0;
@@ -41,7 +42,14 @@ nav {
     display: inline-block;
     margin: 0 1em;
   }
-  @media (max-width: $viewport-width) {
+
+}
+
+@media (max-width: $viewport-width) {
+  body {
+    margin: .5em 1em;
+  }
+  nav {
     & > a {
       font-size: 1.3em;
     }
@@ -74,17 +82,15 @@ nav {
     label {
       display: block;
       float: right;
+      &:before {
+        content: "☰";
+        font-size: 1.5em;
+      }
     }
     :checked {
       ~ ul {
         max-height: 50em;
       }
-    }
-  }
-  @media (prefers-color-scheme: dark) {
-    background: $primary-font-color;
-    & > a {
-      color: $background-color;
     }
   }
 }
