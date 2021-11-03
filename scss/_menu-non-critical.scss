@@ -1,0 +1,39 @@
+.active {
+  color: $secondary-action-color;
+}
+
+html {
+  scroll-padding-top: 5em;
+}
+
+@media (max-width: $viewport-width) {
+  nav {
+    li {
+      a {
+        display: block;
+        width: 100%;
+        padding: 1em;
+        text-align: center;
+        &:hover,
+        &:focus {
+          background: $footer-background-color;
+          color: $background-color;
+          opacity: 1;
+        }
+      }
+    }
+    label {
+      display: block;
+      float: right;
+      &:before {
+        content: "☰";
+        font-size: 1.5em;
+      }
+    }
+    :checked {
+      ~ ul {
+        max-height: 50em;
+      }
+    }
+  }
+}

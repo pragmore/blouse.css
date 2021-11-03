@@ -33,14 +33,14 @@ nav {
 
 nav {
   ul {
-    margin: 1em;
+    margin: 0;
     padding: 0;
     overflow: hidden;
     float: right;
   }
   li {
     display: inline-block;
-    margin: 0 1em;
+    margin: 1em;
   }
 
 }
@@ -54,7 +54,6 @@ nav {
       font-size: 1.3em;
     }
     ul {
-      margin: 0;
       max-height: 1px;
       top: 0;
       float: left;
@@ -66,39 +65,7 @@ nav {
       float: left;
       margin: 0;
       width: 100%;
-      a {
-        display: block;
-        width: 100%;
-        padding: 1em;
-        text-align: center;
-        &:hover,
-        &:focus {
-          background: $footer-background-color;
-          color: $background-color;
-          opacity: 1;
-        }
-      }
-    }
-    label {
-      display: block;
-      float: right;
-      &:before {
-        content: "☰";
-        font-size: 1.5em;
-      }
-    }
-    :checked {
-      ~ ul {
-        max-height: 50em;
-      }
     }
   }
 }
 
-.active {
-  color: $secondary-action-color;
-}
-
-html {
-  scroll-padding-top: 5em;
-}

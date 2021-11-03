@@ -24,12 +24,6 @@ main {
 a {
   color: $primary-action-color;
 }
-a, .btn, button {
-  &:hover,
-  &:focus {
-    opacity: .8;
-  }
-}
 nav a,
 h1 a,
 h2 a,

@@ -29,7 +29,7 @@
   "scripts": {
     "livereload": "livereload -ee 'json'",
     "font-build": "cp font/*.woff dist/",
-    "css-build": "sass --style compressed scss/:dist/",
+    "css-build": "sass --style compressed --no-source-map scss/:dist/",
     "css-watch": "npm run css-build -- --watch",
     "js-build": "babel js --out-dir dist/",
     "js-watch": "npm run js-build -- --watch",
