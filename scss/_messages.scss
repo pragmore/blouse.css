@@ -1,4 +1,4 @@
-@import '_fixed';
+@import 'fixed';
 
 .msg:not(.alert) {
   border: 0;
@@ -13,7 +13,6 @@
     cursor: pointer;
   }
 }
-
 
 .ok {
   background: #d1e7dd;

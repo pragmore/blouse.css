@@ -23,18 +23,17 @@
     "@babel/preset-env": "^7.13.10",
     "http-server": "^13.0.2",
     "livereload": "^0.9.3",
-    "node-sass": "^6.0.0",
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.43.4"
   },
   "scripts": {
     "livereload": "livereload -ee 'json'",
     "font-build": "cp font/*.woff dist/",
-    "css-build": "node-sass --output-style compressed scss/main.scss dist/blouse.css",
-    "css-build-no-icons": "node-sass --output-style compressed scss/main-no-icons.scss dist/blouse-no-icons.css",
+    "css-build": "sass --style compressed scss/:dist/",
     "css-watch": "npm run css-build -- --watch",
     "js-build": "babel js --out-dir dist/",
     "js-watch": "npm run js-build -- --watch",
-    "build": "npm run css-build && npm run js-build && npm run font-build && npm run css-build-no-icons",
+    "build": "npm run css-build && npm run js-build && npm run font-build",
     "serve": "http-server . -c-1",
     "start": "npm-run-all --parallel livereload css-watch js-watch font-build serve"
   },

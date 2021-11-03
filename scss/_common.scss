@@ -15,15 +15,6 @@ body {
   padding: 0;
 }
 
-input,
-textarea,
-select,
-button {
-  color: inherit;
-  background: inherit;
-  font: inherit;
-}
-
 main {
   margin: auto;
   max-width: $viewport-width;
@@ -42,15 +33,13 @@ nav a,
 h1 a,
 h2 a,
 h3 a,
-h4 a,
-h5 a,
-h6 a
+h4 a
 {
   text-decoration: none;
 }
 
 pre > code {
-  overflow-x: auto;
+  overflow: auto;
   width: 100%;
 }
 
@@ -60,22 +49,3 @@ blockquote {
   padding: .5em 1em;
 }
 
-blockquote > footer {
-  margin-top: 1.5em;
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background: $primary-font-color;
-    color: $background-color;
-  }
-  a {
-    color: lighten($primary-action-color, 30%);
-  }
-  nav {
-    background: $primary-font-color;
-    & > a {
-      color: $background-color;
-    }
-  }
-}

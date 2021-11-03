@@ -1,0 +1,12 @@
+@media (prefers-color-scheme: dark) {
+  body, nav {
+    background: $background-dark-color;
+    color: $background-color;
+  }
+  a {
+    color: lighten($primary-action-color, 30%);
+  }
+  nav > a {
+    color: $background-color;
+  }
+}
