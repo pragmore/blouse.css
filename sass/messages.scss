@@ -1,13 +1,19 @@
 @import '_fixed';
 
-.msg {
+.msg:not(.alert) {
   border: 0;
 }
 
 .alert {
   padding: 1em;
   z-index: 200;
+  b {
+    float: right;
+    color: #000;
+    cursor: pointer;
+  }
 }
+
 
 .ok {
   background: #d1e7dd;

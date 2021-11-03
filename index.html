@@ -23,8 +23,6 @@
 	</ul>
 </nav>
 
-<div class="alert info" hidden aria-hidden="true">This is an alert</div>
-
 <main>
   <p>A lightweight mobile first CSS framework. No reset, no extra classes. Less than <strong>1Kb</strong> compressed plus 5.2 Kb for the icons.</p>
   <p>To use it just copy this lines in the <code>&lt;head&gt;</code> tag</p>
@@ -115,60 +113,38 @@
   </table>
 
   <h2 id="form" class="mt-2">Form</h2>
-  <p><a href="#">Toggle alert</a></p>
   <form>
-    <p>
-      <input name="title" id="title" placeholder="Post title" aria-label="Post title" />
-    </p>
-    <p>
-      <label for="post">Write the post content</label>
-    </p>
-    <p class="msg warn">
-      Your post content is empty
-    </p>
-    <p>
-      <textarea name="post" id="post"></textarea>
-    </p>
-    <p>
-      <label for="food">Select your favorite food</label>
-    </p>
-    <p>
-      <select name="food" id="food">
-        <option>Pizza</option>
-        <option>Burger</option>
-        <option>Empanada</option>
-      </select>
-    </p>
-    <p>
-      <label for="file">Select file</label>
-      <input type="file" name="file" id="file">
-    </p>
+    <label for="title">Title</label>
+    <input name="title" id="title" placeholder="Post title" aria-label="Post title" />
+    <label for="post">Write the post content</label>
+    <textarea name="post" id="post"></textarea>
+    <label for="food">Select your favorite food</label>
+    <select name="food" id="food">
+      <option>Pizza</option>
+      <option>Burger</option>
+      <option>Empanada</option>
+    </select>
+    <label for="file">Select file</label>
+    <input type="file" name="file" id="file">
     <p class="mt-4">Choose your file to upload</p>
     <p>
       <label class="btn" for="file-button">Select file</label>
       <input type="file" hidden name="file-button" id="file-button">
     </p>
     <p class="mt-4">Choose your drink:</p>
-    <p>
-      <label>
-        <input type="radio" name="drink" value="water">
-        Water
-      </label>
-    </p>
-    <p>
-      <label>
-        <input type="radio" name="drink" value="soda">
-        Soda
-      </label>
-    </p>
-    <p class="mt-4">
-      <label>
-        <input type="checkbox" value="1" name="terms">
-        Accept terms and conditions
-      </label>
-    </p>
-    <p><button class="main">Save</button></p>
-    <p class="alert ok" hidden>Saved ok!</p>
+    <label>
+      <input type="radio" name="drink" value="water">
+      Water
+    </label>
+    <label>
+      <input type="radio" name="drink" value="soda">
+      Soda
+    </label>
+    <label class="mt-4">
+      <input type="checkbox" value="1" name="terms">
+      Accept terms and conditions
+    </label>
+    <button class="main">Save</button>
   </form>
   
   <h2 id="messages" class="mt-2">Messages</h2>
@@ -183,6 +159,15 @@
   </p>
   <p class="msg warn">
     Warning message
+  </p>
+  <p class="text-center">
+    <a href="#" class="btn" onclick="document.querySelector('[role=alert]').hidden = !document.querySelector('[role=alert]').hidden;return false">
+      Click to toggle alert message
+    </a>
+  </p>
+  <p class="msg alert err" hidden role="alert">
+    This is an alert message. 
+    <b title="Close" aria-label="Close the alert." onclick="this.parentElement.hidden=true;return false">✕</b>
   </p>
   
   <h2 id="icons" class="mt-2">Icons</h2>

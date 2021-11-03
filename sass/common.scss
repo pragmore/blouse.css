@@ -57,13 +57,9 @@ pre > code {
   width: 100%;
 }
 
-address {
-  font-style: normal;
-}
-
 blockquote {
   border-left: 4px solid $secondary-font-color;
-  margin: 1.5em 0em;
+  margin-left: 0;
   padding: .5em 1em;
 }
 

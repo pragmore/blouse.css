@@ -1,11 +1,16 @@
 @import '_theme';
 
+label {
+  display: block;
+  margin: .5em 0;
+}
+
 button,
 input,
 select,
 textarea,
+.msg:not(.alert),
 .btn,
-.msg,
 code {
   border: 1px solid $secondary-font-color;
   border-radius: 10px;
