@@ -29,8 +29,8 @@
   "scripts": {
     "livereload": "livereload -ee 'json'",
     "font-build": "cp font/*.woff dist/",
-    "css-build": "node-sass --output-style compressed sass/main.scss dist/blouse.css",
-    "css-build-no-icons": "node-sass --output-style compressed sass/main-no-icons.scss dist/blouse-no-icons.css",
+    "css-build": "node-sass --output-style compressed scss/main.scss dist/blouse.css",
+    "css-build-no-icons": "node-sass --output-style compressed scss/main-no-icons.scss dist/blouse-no-icons.css",
     "css-watch": "npm run css-build -- --watch",
     "js-build": "babel js --out-dir dist/",
     "js-watch": "npm run js-build -- --watch",
