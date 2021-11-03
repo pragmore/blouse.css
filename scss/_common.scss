@@ -18,6 +18,7 @@ body {
 main {
   margin: auto;
   max-width: $viewport-width;
+  width: 100%;
 }
 
 a {
@@ -38,7 +39,7 @@ h4 a
   text-decoration: none;
 }
 
-pre > code {
+pre {
   overflow: auto;
   width: 100%;
 }
