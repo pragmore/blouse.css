@@ -1,6 +1,6 @@
 {
   "name": "blouse.css",
-  "version": "1.0.0",
+  "version": "1.1.2",
   "description": "a lightweight mobile first css framework",
   "keywords": [
     "css",
@@ -32,6 +32,7 @@
     "serve": "http-server . -c-1",
     "start": "npm-run-all --parallel livereload css-watch font-build serve"
   },
+  "jsdelivr": "dist/blouse.css",
   "dependencies": {
     "semver": "^6.3.0"
   }
