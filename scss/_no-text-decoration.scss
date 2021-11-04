@@ -1,0 +1,15 @@
+// This attributes are here to save space
+// You need to import this after form and before menu!
+
+nav a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+input[type=checkbox],
+input[type=radio],
+a.btn {
+  width: auto;
+  margin: .1em;
+  text-decoration: none;
+}
