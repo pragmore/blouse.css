@@ -33,6 +33,7 @@
     "start": "npm-run-all --parallel livereload css-watch font-build serve"
   },
   "jsdelivr": "dist/blouse.css",
+  "main": "dist/blouse.css",
   "dependencies": {
     "semver": "^6.3.0"
   }
