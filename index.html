@@ -147,13 +147,13 @@
     Warning message
   </p>
   <p class="text-center">
-    <a href="#" class="btn" onclick="document.querySelector('[role=alert]').hidden = !document.querySelector('[role=alert]').hidden;return false">
-      Click to toggle alert message
+    <a href="#" class="btn" onclick="return document.querySelector('.alert').hidden=false">
+      Show alert message 
     </a>
   </p>
   <p class="msg alert err" hidden role="alert">
     This is an alert message. 
-    <b title="Close" aria-label="Close the alert." onclick="this.parentElement.hidden=true;return false">✕</b>
+    <b title="Close" aria-label="Close the alert." onclick="this.parentElement.hidden=true">✕</b>
   </p>
   
   <h2 id="icons" class="mt-2">Icons</h2>
