@@ -21,7 +21,7 @@ Add the following tags in the `<head>`
 
 ```html  
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="dist/blouse.css" crossorigin="anonymous">
+<link rel="stylesheet" href="dist/blouse.css">
 ```
 
 ## Documentation
@@ -129,9 +129,17 @@ The framework come with different releases. If you want to [optimize the critica
 
 ### JsDelivr
 
-Use https://cdn.jsdelivr.net/npm/blouse.css@**version**/dist/**file** check the [documentation](https://www.jsdelivr.com/features) in their site.
+Use cdn.jsdelivr.net/npm/blouse.css@**version**/dist/**file** check the [documentation](https://www.jsdelivr.com/features) in their site. Example for the **small** release in the 1.2 version:
 
-The **medium** version is the default version of the NPM package. You may use it with `https://cdn.jsdelivr.net/npm/blouse.css`.
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/blouse.css@1.2.0/dist/blouse-xs.css" crossorigin="anonymous">
+```
+
+The **medium** version is the default version of the NPM package. You may use it with
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/blouse.css" crossorigin="anonymous">
+```
 
 -------------------
 
