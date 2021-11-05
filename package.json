@@ -26,13 +26,12 @@
   "scripts": {
     "livereload": "livereload -ee 'json'",
     "font-build": "cp font/*.woff dist/",
-    "css-build": "sass --style compressed --no-source-map scss/:dist/",
+    "css-build": "sass --source-map scss/:dist/",
     "css-watch": "npm run css-build -- --watch",
     "build": "npm run css-build && npm run font-build",
     "serve": "http-server . -c-1",
     "start": "npm-run-all --parallel livereload css-watch font-build serve"
   },
-  "jsdelivr": "dist/blouse.css",
   "main": "dist/blouse.css",
   "dependencies": {
     "semver": "^6.3.0"
