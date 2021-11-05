@@ -1,6 +1,6 @@
 {
   "name": "blouse.css",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "a lightweight mobile first css framework",
   "keywords": [
     "css",
@@ -11,6 +11,7 @@
     "framework",
     "web"
   ],
+  "homepage": "https://4lb0.github.io/blouse.css/",
   "author": "Rodrigo 'Albo' Arce <albo@pragmore.com>",
   "repository": {
     "type": "git",
@@ -34,8 +35,5 @@
     "serve": "http-server . -c-1",
     "start": "npm-run-all --parallel livereload css-watch font-build serve"
   },
-  "main": "dist/blouse-m.css",
-  "dependencies": {
-    "semver": "^6.3.0"
-  }
+  "main": "dist/blouse-m.css"
 }
