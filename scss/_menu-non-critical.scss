@@ -14,12 +14,6 @@ html {
         width: 100%;
         padding: 1em;
         text-align: center;
-        &:hover,
-        &:focus {
-          background: $footer-background-color;
-          color: $background-color;
-          opacity: 1;
-        }
       }
     }
     label {

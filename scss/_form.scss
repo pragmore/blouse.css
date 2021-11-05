@@ -42,10 +42,10 @@ input[type=submit] {
   background: $secondary-color;
 }
 .main {
-  background: $action-color;
+  background: $action-color !important;
 }
 .alt {
   border: 1px solid $action-color;
-  background: inherit;
-  color: $action-color;
+  background: inherit !important;
+  color: $action-color !important;
 }

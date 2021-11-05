@@ -13,7 +13,7 @@
     color: lighten($link-color, 30%);
   }
   em, .alt {
-    color: lighten($action-color, 30%);
+    color: lighten($action-color, 30%) !important;
   }
   .mute {
     color: lighten($secondary-color, 30%);
