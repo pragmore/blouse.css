@@ -90,7 +90,7 @@ We use the class names from [Tailwind](https://tailwindcss.com/) in case you lat
 
 Alerts are popup notification showed at the top (over the menu). The close button needs to be implemented with JavaScript. Use `role="alert"` when hidden to make it accesible.
 
-```
+```html 
 <p class="msg alert ok">This is an alert ok.</p>
 
 <p class="msg alert err" hidden role="alert">
