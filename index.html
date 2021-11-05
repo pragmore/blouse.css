@@ -1,182 +1,216 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>blouse.css</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22%3E%3Ctext%20y=%22.9em%22%20font-size=%2290%22%3E👚%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="dist/blouse.css" crossorigin="anonymous">
+  <title>blouse.css</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22%3E%3Ctext%20y=%22.9em%22%20font-size=%2290%22%3E👚%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="dist/blouse.css" crossorigin="anonymous">
 </head>
 <body>
+  <nav>
+    <input type="checkbox" id="menu-toggle" aria-hidden="true" />
+    <a href="#">👚 blouse.css</a>
+    <label for="menu-toggle" aria-hidden="true"></label>
+    <ul>
+        <li><a href="#quick-start">Quick start</a></li>
+        <li><a href="#content">Content</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#messages">Messages</a></li>
+        <li><a href="#icons">Icons</a></li>
+    </ul>
+  </nav>
+  <main>
+    <!-- START Delete all the <main> content to use it as a starter template -->
 
-<nav>
-	<input type="checkbox" id="menu-toggle" aria-hidden="true" />
-  <a href="/">👚 blouse.css</a>
-	<label for="menu-toggle" aria-hidden="true"></label>
-  <ul>
-			<li><a href="#">About</a></li>
-			<li><a href="#text">Text</a></li>
-			<li><a href="#list-and-tables">List and Tables</a></li>
-			<li><a href="#form">Form</a></li>
-			<li><a href="#messages">Messages</a></li>
-			<li><a href="#icons">Icons</a></li>
-	</ul>
-</nav>
-
-<main>
-  <p>A lightweight mobile first CSS framework. No reset, no extra classes. Less than <strong>1Kb</strong> compressed plus 4.4 Kb for the icons.</p>
-  <p>To use it just copy this lines in the <code>&lt;head&gt;</code> tag</p>
-  <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-&lt;link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/blouse.css" crossorigin="anonymous" media="screen"&gt;</code></pre>
-
-  <h2 id="text" class="mt-2">Text</h2>
-  <p><strong>This text is bold.</strong></p>
-  <p><em>This text is in italic.</em></p>
-  <p>The next text is hidden: <span hidden>this one</span></p>
-  <p class="text-center">This text is aligned in the center.</p>
-  <p class="mute">This text is muted.</p>
-  <p class="mt-2">This text has a space on top.</p>
-  <p class="mt-4">This text has more space on top.</p>
-  <p>This is a <a href="#">link</a></p>
-  <p>This is a <a href="#" class="btn">button link</a></p>
-  <p class="mt-2">
-    There is also a <a href="#" class="btn main">Main action</a>
-    and an <a href="#" class="btn alt">Alternative action</a>
-  </p>
-  <h3><a href="#">Title links looks like this</a></h3>
-  <blockquote>This is a blockquote</blockquote>
-
-  <h2 id="list-and-tables" class="mt-2">List and Tables</h2>
-  <ul>
-    <li>Hello</li>
-    <li>Hi</li>
-    <li>How you doing?</li>
-    <li>Hola</li>
-  </ul>
-
-  <ol>
-    <li>First</li>
-    <li>Second</li>
-    <li>Third</li>
-  </ol>
-
-  <table>
-    <tr>
-      <th>Team</th>
-      <th>Win games</th>
-      <th>Lost games</th>
-    </tr>
-    <tr>
-      <td>Blue Barracudas</td>
-      <td>8</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <td>Green Monkeys</td>
-      <td>7</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Silver Snakes</td>
-      <td>6</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>Red Jaguars</td>
-      <td>5</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>Orange Iguanas</td>
-      <td>3</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <td>Purple Parrots</td>
-      <td>1</td>
-      <td>9</td>
-    </tr>
-  </table>
-
-  <h2 id="form" class="mt-2">Form</h2>
-  <form>
-    <label for="title">Title</label>
-    <input name="title" id="title" placeholder="Post title" aria-label="Post title" />
-    <label for="post">Write the post content</label>
-    <textarea name="post" id="post"></textarea>
-    <label for="food">Select your favorite food</label>
-    <select name="food" id="food">
-      <option>Pizza</option>
-      <option>Burger</option>
-      <option>Empanada</option>
-    </select>
-    <label for="file">Select file</label>
-    <input type="file" name="file" id="file">
-    <p class="mt-4">Choose your file to upload</p>
-    <p>
-      <label class="btn" for="file-button">Select file</label>
-      <input type="file" hidden name="file-button" id="file-button">
+    <h1 class="text-center">Dress up your semantic HTML with <em>blouse.css</em></h1>
+    <p class="text-center">
+      This responsive tiny framework allows you to
+      <strong>focus on the content</strong>.
+      Don't waste time with design until your app is working.
+      Less than <strong>1Kb</strong> compressed* and 
+      <strong>4.4Kb</strong> for the icons.
     </p>
-    <p class="mt-4">Choose your drink:</p>
-    <label>
-      <input type="radio" name="drink" value="water">
-      Water
-    </label>
-    <label>
-      <input type="radio" name="drink" value="soda">
-      Soda
-    </label>
-    <label class="mt-4">
-      <input type="checkbox" value="1" name="terms">
-      Accept terms and conditions
-    </label>
-    <button class="main">Save</button>
-  </form>
-  
-  <h2 id="messages" class="mt-2">Messages</h2>
-  <p class="msg ok">
-    Ok message
-  </p>
-  <p class="msg err">
-    Error message
-  </p>
-  <p class="msg info">
-    Info message
-  </p>
-  <p class="msg warn">
-    Warning message
-  </p>
-  <p class="text-center">
-    <a href="#" class="btn" onclick="return document.querySelector('.alert').hidden=false">
-      Show alert message 
-    </a>
-  </p>
-  <p class="msg alert err" hidden role="alert">
-    This is an alert message. 
-    <b title="Close" aria-label="Close the alert." onclick="this.parentElement.hidden=true">✕</b>
-  </p>
-  
-  <h2 id="icons" class="mt-2">Icons</h2>
-  <ul>
-    <li>Twitter: <i class="tw" aria-hidden="true" title="Twitter"></i></li>
-    <li>Facebook: <i class="fb" aria-hidden="true" title="Facebook"></i></li>
-    <li>GitHub: <i class="gh" aria-hidden="true" title="GitHub"></i></li>
-    <li>LinkedIn: <i class="in" aria-hidden="true" title="LinkedIn"></i></li>
-    <li>WhatsApp: <i class="wa" aria-hidden="true" title="WhatsApp"></i></li>
-    <li>Telegram: <i class="tl" aria-hidden="true" title="Telegram"></i></li>
-    <li>Youtube: <i class="yt" aria-hidden="true" title="Youtube"></i></li>
-    <li>Instagram: <i class="ig" aria-hidden="true" title="Instagram"></i></li>
-    <li>Twitch: <i class="ti" aria-hidden="true" title="Twitch"></i></li>
-  </ul>
+    <p class="text-center text-lg">
+      <a class="btn main" href="https://github.com/4lb0/blouse.css#documentation">Documentation</a>
+      <a class="btn alt" href="https://github.com/4lb0/blouse.css/archive/refs/heads/main.zip">Download</a>
+    </p>
+    <h2>Features</h2>
+    <ul>
+      <li>Semantic HTML ✅</li>
+      <li>Mobile first ✅</li>
+      <li>Dark mode ✅</li>
+      <li>Lightweight, minimal footprint ✅</li>
+      <li>No JavaScript ✅</li>
+      <li>Icons for social networks ✅</li>
+    </ul>
+    <p>
+      *
+      <small>When minified and compressed with the <a href="https://caniuse.com/brotli">widely supported</a> brotli algorithm.</small>
+    </p>
+    <h2 id="quick-start" class="mt-2">Quick start</h2>
+    <p>Copy paste this lines in your <code>&lt;head&gt;</code> tag</p>
+    <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/blouse.css/dist/blouse.css"&gt;</code></pre>
+    <p>Or use our <a href="dist/starter-template.html">Starter Template</a> (right click on the link, Save link as).</p>
 
-</main>
-<footer>
-  <span><a href="https://github.com/4lb0/blouse.css/blob/main/LICENSE" target="_blank">MIT Licence</a></span>
-  <span>
-    <a href="https://github.com/4lb0/blouse.css" target="_blank" aria-label="GitHub">
-      <i class="gh" aria-hidden="true" title="GitHub"></i>
-    </a>
-  </span>
-</footer>
+    <h2 id="content" class="mt-2">Content</h2>
+
+    <h3 class="mt-2">Text</h3>
+    <p><strong>This text is bold.</strong></p>
+    <p>This is an <em>emphasized</em> text.</p>
+    <p>The next text is hidden: <span hidden>this one</span></p>
+    <p class="text-center">This text is aligned in the center.</p>
+    <p class="mute">This text is muted.</p>
+    <p class="text-lg">This text is big.</p>
+    <blockquote>This is a blockquote</blockquote>
+    <p class="mt-2">This text has a space on top.</p>
+    <p class="mt-4">This text has more space on top.</p>
+
+    <h3 class="mt-2">Links</h3>
+    <p>This text has a <a href="#">link here</a>.</p>
+    <p>
+      This is a <a href="#" class="btn">Button link</a>.
+      Turn that link into a <a href="#" class="btn main">Main action</a>
+      or an <a href="#" class="btn alt">Alternative action</a>
+    </p>
+    <h4><a href="#">Title links looks like this</a></h4>
+
+    <h3 class="mt-2">Lists</h3>
+    <ul>
+      <li>Hello</li>
+      <li>Hi</li>
+      <li>How you doing?</li>
+      <li>Hola</li>
+    </ul>
+    <ol>
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+    </ol>
+
+    <h3 class="mt-2">Table</h3>
+    <table>
+      <tr>
+        <th>Team</th>
+        <th>Win games</th>
+        <th>Lost games</th>
+      </tr>
+      <tr>
+        <td>Blue Barracudas</td>
+        <td>8</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>Green Monkeys</td>
+        <td>7</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>Silver Snakes</td>
+        <td>6</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>Red Jaguars</td>
+        <td>5</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>Orange Iguanas</td>
+        <td>3</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>Purple Parrots</td>
+        <td>1</td>
+        <td>9</td>
+      </tr>
+    </table>
+
+    <h2 id="forms" class="mt-2">Forms</h2>
+    <form>
+      <label for="title">Title</label>
+      <input name="title" id="title" placeholder="Post title" aria-label="Post title" />
+      <label for="post">Write the post content</label>
+      <textarea name="post" id="post"></textarea>
+      <label for="food">Select your favorite food</label>
+      <select name="food" id="food">
+        <option>Pizza</option>
+        <option>Burger</option>
+        <option>Empanada</option>
+      </select>
+      <label for="file">Select file</label>
+      <input type="file" name="file" id="file">
+      <p class="mt-4">Choose your file to upload</p>
+      <p>
+        <label class="btn" for="file-button">Select file</label>
+        <input type="file" hidden name="file-button" id="file-button">
+      </p>
+      <p class="mt-4">Choose your drink:</p>
+      <label>
+        <input type="radio" name="drink" value="water">
+        Water
+      </label>
+      <label>
+        <input type="radio" name="drink" value="soda">
+        Soda
+      </label>
+      <label class="mt-4">
+        <input type="checkbox" value="1" name="terms">
+        Accept terms and conditions
+      </label>
+      <button class="main">Save</button>
+    </form>
+    
+    <h2 id="messages" class="mt-2">Messages</h2>
+    <p class="msg ok">
+      Ok message
+    </p>
+    <p class="msg err">
+      Error message
+    </p>
+    <p class="msg info">
+      Info message
+    </p>
+    <p class="msg warn">
+      Warning message
+    </p>
+    <p class="text-center">
+      <a href="#" class="btn" onclick="return document.querySelector('.alert').hidden=false">
+        Show alert message 
+      </a>
+    </p>
+    <p class="msg alert err" hidden role="alert">
+      This is an alert message. 
+      <b title="Close" aria-label="Close the alert." onclick="this.parentElement.hidden=true">✕</b>
+    </p>
+    
+    <h2 id="icons" class="mt-2">Icons</h2>
+    <p>You can use <a href="https://getemoji.com/">emojis</a> for most of the icons you need, except for brand icons.</p>
+    <ul>
+      <li>Twitter: <i class="tw" aria-hidden="true" title="Twitter"></i></li>
+      <li>Facebook: <i class="fb" aria-hidden="true" title="Facebook"></i></li>
+      <li>GitHub: <i class="gh" aria-hidden="true" title="GitHub"></i></li>
+      <li>LinkedIn: <i class="in" aria-hidden="true" title="LinkedIn"></i></li>
+      <li>WhatsApp: <i class="wa" aria-hidden="true" title="WhatsApp"></i></li>
+      <li>Telegram: <i class="tl" aria-hidden="true" title="Telegram"></i></li>
+      <li>Youtube: <i class="yt" aria-hidden="true" title="Youtube"></i></li>
+      <li>Instagram: <i class="ig" aria-hidden="true" title="Instagram"></i></li>
+      <li>Twitch: <i class="ti" aria-hidden="true" title="Twitch"></i></li>
+    </ul>
+
+
+    <!-- END -->
+  </main>
+  <footer>
+    <span>Made with 🥚🥚🥚</span>
+    <span><a href="https://github.com/4lb0/blouse.css/blob/main/LICENSE" target="_blank">MIT Licence</a></span>
+    <span>
+      <a href="https://github.com/4lb0/blouse.css" target="_blank" aria-label="GitHub">
+        <i class="gh" aria-hidden="true" title="GitHub"></i>
+      </a>
+    </span>
+  </footer>
 </body>
 </html>

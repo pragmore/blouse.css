@@ -18,10 +18,16 @@ body {
 main {
   margin: auto;
   max-width: $viewport-width;
+  padding: 1em;
   width: 100%;
 }
 
 a {
+  color: $link-color;
+}
+
+em {
+  font-style: inherit;
   color: $primary-action-color;
 }
 

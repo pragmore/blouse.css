@@ -1,8 +1,8 @@
 # 👚 blouse.css
 
-A lightweight mobile first CSS framework. No reset, no extra classes. Less than <strong>1Kb</strong> compressed plus 4.4 Kb for the icons.
+A lightweight mobile first CSS framework for the mordern browsers. No reset, no extra classes. Less than <strong>1Kb</strong> compressed plus 4.4 Kb for the icons.
 
-**[See it live in Codepen](https://codepen.io/albo-ar/pen/YzQaWoK?editors=1000)**
+[See it live](https://4lb0.github.io/blouse.css/)
 
 ## How to use
 

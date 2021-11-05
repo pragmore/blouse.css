@@ -26,13 +26,15 @@
   "scripts": {
     "livereload": "livereload -ee 'json'",
     "font-build": "cp font/*.woff2 dist/",
+    "css-min": "sass --style compressed --no-source-map scss/:dist/",
     "css-build": "sass --source-map scss/:dist/",
     "css-watch": "npm run css-build -- --watch",
-    "build": "npm run css-build && npm run font-build",
+    "starter-template": "sed '/START/,/END/d' index.html | sed 's#dist/#https://cdn.jsdelivr.net/npm/#' > dist/starter-template.html",
+    "build": "npm-run-all --parallel css-build font-build starter-template",
     "serve": "http-server . -c-1",
     "start": "npm-run-all --parallel livereload css-watch font-build serve"
   },
-  "main": "dist/blouse.css",
+  "main": "dist/blouse-m.css",
   "dependencies": {
     "semver": "^6.3.0"
   }

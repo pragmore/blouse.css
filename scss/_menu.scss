@@ -46,9 +46,6 @@ nav {
 }
 
 @media (max-width: $viewport-width) {
-  body {
-    margin: .5em 1em;
-  }
   nav {
     & > a {
       font-size: 1.3em;
@@ -57,6 +54,7 @@ nav {
       max-height: 1px;
       clear: both;
       transition: .2s;
+      width: 100%;
     }
     li {
       float: left;

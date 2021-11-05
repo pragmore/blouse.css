@@ -1,5 +1,5 @@
 .active {
-  color: $secondary-action-color;
+  color: $primary-action-color;
 }
 
 html {
@@ -25,6 +25,7 @@ html {
     label {
       display: block;
       float: right;
+      margin-right: 1em;
       &:before {
         content: "☰";
         font-size: 1.5em;

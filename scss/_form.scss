@@ -40,10 +40,12 @@ input[type=submit] {
   display: inline-block;
   text-align: center;
   background: $secondary-font-color;
-  &.main {
-    background: $primary-action-color;
-  }
-  &.alt {
-    background: $secondary-action-color;
-  }
+}
+.main {
+  background: $primary-action-color;
+}
+.alt {
+  border: 1px solid $primary-action-color;
+  background: inherit;
+  color: $primary-action-color;
 }

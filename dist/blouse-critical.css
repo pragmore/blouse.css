@@ -7,7 +7,7 @@ body {
   color: #191017;
   display: flex;
   flex-direction: column;
-  font: 16pt Helvetica, Arial, sans;
+  font: 14pt Helvetica, Arial, sans;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -16,11 +16,17 @@ body {
 main {
   margin: auto;
   max-width: 991px;
+  padding: 1em;
   width: 100%;
 }
 
 a {
   color: #D03633;
+}
+
+em {
+  font-style: inherit;
+  color: #794573;
 }
 
 pre {
@@ -74,15 +80,15 @@ input[type=submit] {
   text-align: center;
   background: #505860;
 }
-button.main,
-.btn.main,
-input[type=submit].main {
-  background: #D03633;
-}
-button.alt,
-.btn.alt,
-input[type=submit].alt {
+
+.main {
   background: #794573;
+}
+
+.alt {
+  border: 1px solid #794573;
+  background: inherit;
+  color: #794573;
 }
 
 nav a,
@@ -144,10 +150,6 @@ nav li {
 }
 
 @media (max-width: 991px) {
-  body {
-    margin: 0.5em 1em;
-  }
-
   nav > a {
     font-size: 1.3em;
   }
@@ -155,6 +157,7 @@ nav li {
     max-height: 1px;
     clear: both;
     transition: 0.2s;
+    width: 100%;
   }
   nav li {
     float: left;
@@ -186,9 +189,21 @@ td {
   margin-top: 2em;
 }
 
+.text-lg {
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
 @media (prefers-color-scheme: dark) {
   body, nav {
     background: #291a25;
+    color: #FFF;
+  }
+
+  nav {
+    box-shadow: 0 1px 4px -2px #FFF;
+  }
+  nav > a {
     color: #FFF;
   }
 
@@ -196,8 +211,12 @@ td {
     color: #edb1af;
   }
 
-  nav > a {
-    color: #FFF;
+  em, .alt {
+    color: #c295bd;
+  }
+
+  .mute {
+    color: #9ca5ad;
   }
 }
 
