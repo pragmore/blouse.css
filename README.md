@@ -1,19 +1,44 @@
 # 👚 blouse.css
 
-A lightweight mobile first CSS framework for the mordern browsers. No reset, no extra classes. Less than <strong>1Kb</strong> compressed plus 4.4 Kb for the icons.
+This responsive tiny framework allows you to focus on the content. Don't waste time with design until your app is working. Less than **1Kb** compressed\* and **4.4Kb** for the icons.
+
+## Features
+
+* Semantic HTML ✅
+* Mobile first ✅
+* Dark mode ✅
+* Lightweight, minimal footprint ✅
+* No JavaScript ✅
+* Icons for social networks ✅
 
 [See it live](https://4lb0.github.io/blouse.css/)
+
+\* When minified and compressed with the widely supported brotli algorithm.
 
 ## How to use
 
 Add the following tags in the `<head>`
 
 ```html  
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/blouse.css" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="dist/blouse.css" crossorigin="anonymous">
 ```
 
 ## Documentation
+
+Use as much semantic HTML as possible, see the [demo](https://4lb0.github.io/blouse.css/) for reference.
+
+### Utilities
+
+We use the class names from [Tailwind](https://tailwindcss.com/) in case you later want to migrate to it.
+
+```html
+<p class="text-center">This text is align in the center.</p>
+<p class="text-lg">This text is big.</p>
+<p class="mute">This text is muted.</p>
+<p class="mt-2">This text has a space on top.</p>
+<p class="mt-4">This text has double space on top.</p>
+```
 
 ### Menu
 
@@ -30,22 +55,7 @@ Add the following tags in the `<head>`
 </nav>
 ```
 
-### Forms
-
-```html 
-<button class="main">Primary button</button>
-<button class="alt">Secondary button</button>
-<p class="msg ok" hidden>Operation successful</p>
-<p class="msg err" hidden>Operation error</p>
-<p class="msg warn" hidden>Some warning</p>
-<p class="msg info" hidden>Some info</p>
-
-<!-- Alert is a pop up notification at the top of the page -->
-<p class="alert ok" hidden aria-hidden="true">Saved ok!</p>
-```
-
 ### Footer
-
 
 ```html 
 <footer>
@@ -57,19 +67,41 @@ Add the following tags in the `<head>`
 </footer>
 ```
 
-### Utilities
+### Forms and messages
 
 ```html 
-<a class="btn" href="#">This is a button</a>
+<a class="btn" href="#">Regular button</a>
 <a class="btn main" href="#">Main button</a>
 <a class="btn alt" href="#">Alternative button</a>
-<p class="text-center">This text is align in the center.</p>
-<p class="mute">This text is muted.</p>    
-<p class="mt-2">This text has a space on top.</p>
-<p class="mt-4">This text has double space on top.</p>
+
+<input type="submit" value="Regular button" />
+<input type="submit" class="main" value="Main button" />
+<input type="submit" class="alt" value="Alternative button" />
+
+<button>Regular button</button>
+<button class="main">Main button</button>
+<button class="alt">Alternative button</button>
+
+<p class="msg ok">Ok message</p>
+<p class="msg err">Error message</p>
+<p class="msg info">Info message</p>
+<p class="msg warn">Warning message</p>
+```
+
+Alerts are popup notification showed at the top (over the menu). The close button needs to be implemented with JavaScript. Use `role="alert"` when hidden to make it accesible.
+
+```
+<p class="msg alert ok">This is an alert ok.</p>
+
+<p class="msg alert err" hidden role="alert">
+  This is an alert error. 
+  <b title="Close" aria-label="Close the alert." onclick="this.parentElement.hidden=true">✕</b>
+</p>
 ```
 
 ### Icons
+
+Use emojis for most of the icons you need, like 🖨️, ⚙️ or 📞 But for social networks we needs icons, here you have the most used: 
 
 ```html
 Twitter: <i class="tw" aria-hidden="true" title="Twitter"></i>
@@ -82,3 +114,26 @@ Youtube: <i class="yt" aria-hidden="true" title="Youtube"></i>
 Instagram: <i class="ig" aria-hidden="true" title="Instagram"></i>
 Twitch: <i class="ti" aria-hidden="true" title="Twitch"></i>
 ```
+
+## Releases
+
+The framework come with different releases. If you want to [optimize the critical rendering path](https://web.dev/defer-non-critical-css/) use the critical and non-critical releases.
+
+| Release      | Description                                       | File                    |
+| ------------ | ------------------------------------------------- | ----------------------- |
+| Full         | Default version include all                       | blouse.css              |
+| Medium       | Include all except the icons                      | blouse-m.css            |
+| Small        | No menu, no dark mode, no icons                   | blouse-xs.css           |
+| Critical     | Copy this version in &lt;styles&gt; in the header | blouse-critical.css     |
+| Non-critical | Included asynchronously with JavaScript           | blouse-non-critical.css |
+
+### JsDelivr
+
+Use https://cdn.jsdelivr.net/npm/blouse.css@**version**/dist/**file** check the [documentation](https://www.jsdelivr.com/features) in their site.
+
+The **medium** version is the default version of the NPM package. You may use it with `https://cdn.jsdelivr.net/npm/blouse.css`.
+
+-------------------
+
+This wasn't made with ❤️, this was made with 🥚🥚🥚.
+
