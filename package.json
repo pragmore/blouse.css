@@ -25,7 +25,7 @@
   },
   "scripts": {
     "livereload": "livereload -ee 'json'",
-    "font-build": "cp font/*.woff dist/",
+    "font-build": "cp font/*.woff2 dist/",
     "css-build": "sass --source-map scss/:dist/",
     "css-watch": "npm run css-build -- --watch",
     "build": "npm run css-build && npm run font-build",

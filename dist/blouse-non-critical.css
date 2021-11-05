@@ -98,8 +98,7 @@ nav,
 
 @font-face {
   font-family: si;
-  src: url("si.woff");
-  font-display: swap;
+  src: url("bi.woff2");
 }
 i:before {
   font: 1em si;
