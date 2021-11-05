@@ -10,7 +10,7 @@ Add the following tags in the `<head>`
 
 ```html  
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/4lb0/blouse.css@latest/dist/blouse.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/blouse.css" crossorigin="anonymous">
 ```
 
 ## Documentation
