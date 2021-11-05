@@ -12,7 +12,7 @@ textarea,
 .msg,
 .btn,
 code {
-  border: 1px solid $secondary-font-color;
+  border: 1px solid $secondary-color;
   border-radius: 10px;
   padding: 10px;
   width: 100%;
@@ -39,13 +39,13 @@ input[type=submit] {
   cursor: pointer;
   display: inline-block;
   text-align: center;
-  background: $secondary-font-color;
+  background: $secondary-color;
 }
 .main {
-  background: $primary-action-color;
+  background: $action-color;
 }
 .alt {
-  border: 1px solid $primary-action-color;
+  border: 1px solid $action-color;
   background: inherit;
-  color: $primary-action-color;
+  color: $action-color;
 }

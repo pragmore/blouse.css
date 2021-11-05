@@ -6,7 +6,7 @@
 
 body {
   background: $background-color;
-  color: $primary-font-color;
+  color: $font-color;
   display: flex;
   flex-direction: column;
   font: $font-size $font-family;
@@ -28,7 +28,7 @@ a {
 
 em {
   font-style: inherit;
-  color: $primary-action-color;
+  color: $action-color;
 }
 
 pre {
@@ -37,7 +37,7 @@ pre {
 }
 
 blockquote {
-  border-left: 4px solid $secondary-font-color;
+  border-left: 4px solid $secondary-color;
   margin-left: 0;
   padding: .5em 1em;
 }
