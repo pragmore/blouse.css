@@ -141,10 +141,10 @@ The framework come with different releases. If you want to [optimize the critica
 
 ### JsDelivr
 
-Use cdn.jsdelivr.net/npm/blouse.css@**version**/dist/**file** check the [documentation](https://www.jsdelivr.com/features) in their site. Example for the **small** release in the 1.2 version:
+Use cdn.jsdelivr.net/npm/blouse.css@**version**/dist/**file** check the [documentation](https://www.jsdelivr.com/features) in their site, add `.min` for the minified version. Example for the minified **small** release in the 1.2 version:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/blouse.css@1.2.0/dist/blouse-xs.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/blouse.css@1.2/dist/blouse-xs.min.css" crossorigin="anonymous">
 ```
 
 The **medium** version is the default version of the NPM package. You may use it with
