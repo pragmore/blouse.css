@@ -36,8 +36,6 @@ Copy the following code or download the [starter template](dist/starter-template
 </html>
 ```
 
-```html
-
 ## Documentation
 
 Use as much semantic HTML as possible, see the [demo](https://4lb0.github.io/blouse.css/) for reference.
