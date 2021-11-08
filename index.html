@@ -183,8 +183,15 @@
     </p>
     <p class="msg alert err" hidden role="alert">
       This is an alert message. 
-      <b title="Close" aria-label="Close the alert." onclick="this.parentElement.hidden=true">✕</b>
+      <b title="Close" aria-label="Close the alert with escape" onclick="this.parentElement.hidden=true">✕</b>
     </p>
+<script>
+document.addEventListener('keydown', function (ev) { 
+  if (ev.key === "Escape") { 
+    document.querySelector(".alert:not([hidden])")?.hidden = true
+  }
+})
+</script>
     
     <h2 id="icons" class="mt-2">Icons</h2>
     <p>
