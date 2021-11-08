@@ -17,12 +17,26 @@ This responsive tiny framework allows you to focus on the content. Don't waste t
 
 ## How to use
 
-Add the following tags in the `<head>`
+Copy the following code or download the [starter template](starter-template.html)
 
-```html  
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="dist/blouse.css">
+```html
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="dist/blouse.css">
+</head>
+<body>
+  <nav><!-- Optional menu --></nav>
+  <main>
+    <!-- Put your content here! -->
+  </main>
+  <footer><!-- Optional footer --></footer>
+</body>
+</html>
 ```
+
+```html
 
 ## Documentation
 
