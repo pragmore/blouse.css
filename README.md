@@ -17,7 +17,7 @@ This responsive tiny framework allows you to focus on the content. Don't waste t
 
 ## How to use
 
-Copy the following code or download the [starter template](starter-template.html)
+Copy the following code or download the [starter template](dist/starter-template.html)
 
 ```html
 <!doctype html>
