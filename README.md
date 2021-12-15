@@ -2,6 +2,9 @@
 
 This responsive tiny framework allows you to focus on the content. Don't waste time with design until your app is working. Less than **1Kb** compressed\* and **4.4Kb** for the icons.
 
+![CSS size in bytes](https://img.shields.io/github/size/4lb0/blouse.css/dist/blouse.css?label=uncompressed%20size)
+![Icons font size in bytes](https://img.shields.io/github/size/4lb0/blouse.css/dist/bi.woff2?label=icons%20size)
+
 ## Features
 
 * Semantic HTML ✅
