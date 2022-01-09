@@ -20,6 +20,10 @@
         <li><a href="#icons">Icons</a></li>
     </ul>
   </nav>
+  <!-- This JS is to close the menu on mobile, you need it only when the links are anchors -->
+  <script>document.querySelectorAll('nav ul a').forEach((el) => el.onclick = (() => {
+   document.querySelector('nav input').checked=false; return true;
+   }))</script>
   <main>
     <!-- START Delete all the <main> content to use it as a starter template -->
 
