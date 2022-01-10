@@ -11,12 +11,15 @@ This responsive tiny framework allows you to focus on the content. Don't waste t
 * Mobile first ✅
 * Dark mode ✅
 * Lightweight, minimal footprint ✅
-* No JavaScript ✅
+* No JavaScript \*\* ✅
 * Icons for social networks ✅
 
 [See it live](https://4lb0.github.io/blouse.css/)
 
 \* When minified and compressed with the widely supported brotli algorithm.
+
+\*\* The demo menu uses JS to close it when a link is clicked.
+It is only necessary on anchors, not when they're linked to other pages.
 
 ## How to use
 

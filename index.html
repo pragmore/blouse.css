@@ -21,9 +21,10 @@
     </ul>
   </nav>
   <!-- This JS is to close the menu on mobile, you need it only when the links are anchors -->
-  <script>document.querySelectorAll('nav ul a').forEach((el) => el.onclick = (() => {
-   document.querySelector('nav input').checked=false; return true;
-   }))</script>
+  <script>document.querySelectorAll('nav a').forEach(el => el.onclick = (() => {
+    document.getElementById('menu-toggle').checked = false;
+    return true;
+  }))</script>
   <main>
     <!-- START Delete all the <main> content to use it as a starter template -->
 
@@ -45,12 +46,15 @@
       <li>Mobile first ✅</li>
       <li>Dark mode ✅</li>
       <li>Lightweight, minimal footprint ✅</li>
-      <li>No JavaScript ✅</li>
+      <li>No JavaScript ** ✅</li>
       <li>Icons for social networks ✅</li>
     </ul>
     <p>
       *
       <small>When minified and compressed with the <a href="https://caniuse.com/brotli">widely supported</a> brotli algorithm.</small>
+      <br>
+      **
+      <small>The demo menu uses JS to close it when a link is clicked. It is only necessary on anchors, not when they're linked to other pages.</small>
     </p>
     <h2 id="quick-start" class="mt-2">Quick start</h2>
     <p>Copy paste this lines in your <code>&lt;head&gt;</code> tag</p>
