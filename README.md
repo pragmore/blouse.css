@@ -14,7 +14,7 @@ This responsive tiny framework allows you to focus on the content. Don't waste t
 * No JavaScript \*\* ✅
 * Icons for social networks ✅
 
-[See it live](https://pragmore.github.io/blouse.css/)
+[See it live](https://pragmore.com/blouse/)
 
 \* When minified and compressed with the widely supported brotli algorithm.
 
@@ -135,11 +135,16 @@ Twitch: <i class="ti" aria-hidden="true" title="Twitch"></i>
 
 ## Themes
 
-The framework come with different themes.
+The framework has different themes.
 
 * Default
 * Warm
-* Metalic
+* Cool
+* Sea
+* Balloon
+* Solid
+* Party
+* Idea
 
 ### CDN 
 
