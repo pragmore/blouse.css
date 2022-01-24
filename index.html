@@ -60,7 +60,7 @@
     <h2 id="quick-start" class="mt-2">Quick start</h2>
     <p>Copy paste this lines in your <code>&lt;head&gt;</code> tag</p>
     <pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
-&lt;link rel="stylesheet" href="https://cdn.pragmore.com/2.0/blouse.css"&gt;</code></pre>
+&lt;link rel="stylesheet" href="https://cdn.pragmore.com/2.0.0/blouse.css"&gt;</code></pre>
     <p>Then the body needs a <code>&lt;main&gt;</code> element. <code>&lt;nav&gt;</code> and <code>&lt;footer&gt;</code> are optionals.</p>
     <p>Download the <a href="dist/starter-template.html">starter template</a> (right click on the link, Save link as).</p>
 
@@ -77,7 +77,7 @@
       <a href="#" class="btn alt">Idea</a>
     </p>
     <p>
-      <code id="pathTheme">https://cdn.pragmore.com/2.0/default/blouse.css</code>
+      <code id="pathTheme">https://cdn.pragmore.com/2.0.0/default/blouse.css</code>
     </p>
   <script>document.querySelectorAll('.themes a').forEach(el => el.onclick = (() => {
     const theme = el.innerHTML.toLowerCase();
@@ -86,8 +86,8 @@
     current.classList.add('alt');
     el.classList.remove('alt');
     el.classList.add('main');
-    document.querySelector('link[rel=stylesheet]').href = '/dist/' + theme + '.css';
-    document.getElementById('pathTheme').innerHTML = 'https://cdn.pragmore.com/2.0/' + theme + '/blouse.css';
+    document.querySelector('link[rel=stylesheet]').href = 'dist/' + theme + '.css';
+    document.getElementById('pathTheme').innerHTML = 'https://cdn.pragmore.com/2.0.0/' + theme + '/blouse.css';
     return false;
   }))</script>
 
