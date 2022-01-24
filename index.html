@@ -14,6 +14,7 @@
     <label for="menu-toggle" aria-hidden="true"></label>
     <ul>
         <li><a href="#quick-start">Quick start</a></li>
+        <li><a href="#themes">Themes</a></li>
         <li><a href="#content">Content</a></li>
         <li><a href="#forms">Forms</a></li>
         <li><a href="#messages">Messages</a></li>
@@ -62,6 +63,33 @@
 &lt;link rel="stylesheet" href="https://cdn.pragmore.com/2.0/blouse.css"&gt;</code></pre>
     <p>Then the body needs a <code>&lt;main&gt;</code> element. <code>&lt;nav&gt;</code> and <code>&lt;footer&gt;</code> are optionals.</p>
     <p>Download the <a href="dist/starter-template.html">starter template</a> (right click on the link, Save link as).</p>
+
+    <h2 id="themes" class="mt-2">Themes</h2>
+    <p>Click on the theme name to change it</p>
+    <p class="themes">
+      <a href="#" class="btn main">Default</a>
+      <a href="#" class="btn alt">Warm</a>
+      <a href="#" class="btn alt">Cool</a>
+      <a href="#" class="btn alt">Sea</a>
+      <a href="#" class="btn alt">Balloon</a>
+      <a href="#" class="btn alt">Solid</a>
+      <a href="#" class="btn alt">Party</a>
+      <a href="#" class="btn alt">Idea</a>
+    </p>
+    <p>
+      <code id="pathTheme">https://cdn.pragmore.com/2.0/default/blouse.css</code>
+    </p>
+  <script>document.querySelectorAll('.themes a').forEach(el => el.onclick = (() => {
+    const theme = el.innerHTML.toLowerCase();
+    const current = document.querySelector('.themes .btn.main');
+    current.classList.remove('main');
+    current.classList.add('alt');
+    el.classList.remove('alt');
+    el.classList.add('main');
+    document.querySelector('link[rel=stylesheet]').href = '/dist/' + theme + '.css';
+    document.getElementById('pathTheme').innerHTML = 'https://cdn.pragmore.com/2.0/' + theme + '/blouse.css';
+    return false;
+  }))</script>
 
     <h2 id="content" class="mt-2">Content</h2>
 
