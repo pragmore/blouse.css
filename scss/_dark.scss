@@ -1,6 +1,6 @@
 @media (prefers-color-scheme: dark) {
   body, nav {
-    background: $background-dark-color;
+    background: lighten($font-color, 5%);
     color: $background-color;
   }
   nav {
@@ -16,6 +16,6 @@
     color: lighten($action-color, 30%) !important;
   }
   .mute {
-    color: lighten($secondary-color, 30%);
+    color: lighten($neutral-color, 30%);
   }
 }

@@ -1,5 +1,3 @@
-@import 'theme';
-
 * {
   box-sizing: border-box;
 }
@@ -37,7 +35,7 @@ pre {
 }
 
 blockquote {
-  border-left: 4px solid $secondary-color;
+  border-left: 4px solid $neutral-color;
   margin-left: 0;
   padding: .5em 1em;
 }
