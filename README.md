@@ -2,8 +2,8 @@
 
 This responsive tiny framework allows you to focus on the content. Don't waste time with design until your app is working. Less than **1Kb** compressed\* and **4.4Kb** for the icons.
 
-![CSS size in bytes](https://img.shields.io/github/size/4lb0/blouse.css/dist/blouse.css?label=uncompressed%20size)
-![Icons font size in bytes](https://img.shields.io/github/size/4lb0/blouse.css/dist/bi.woff2?label=icons%20size)
+![CSS size in bytes](https://img.shields.io/github/size/pragmore/blouse.css/dist/blouse.css?label=uncompressed%20size)
+![Icons font size in bytes](https://img.shields.io/github/size/pragmore/blouse.css/dist/bi.woff2?label=icons%20size)
 
 ## Features
 
@@ -14,7 +14,7 @@ This responsive tiny framework allows you to focus on the content. Don't waste t
 * No JavaScript \*\* ✅
 * Icons for social networks ✅
 
-[See it live](https://4lb0.github.io/blouse.css/)
+[See it live](https://pragmore.github.io/blouse.css/)
 
 \* When minified and compressed with the widely supported brotli algorithm.
 
@@ -44,7 +44,7 @@ Copy the following code or download the [starter template](dist/starter-template
 
 ## Documentation
 
-Use as much semantic HTML as possible, see the [demo](https://4lb0.github.io/blouse.css/) for reference.
+Use as much semantic HTML as possible, see the [demo](https://pragmore.github.io/blouse.css/) for reference.
 
 ### Utilities
 
@@ -133,33 +133,23 @@ Instagram: <i class="ig" aria-hidden="true" title="Instagram"></i>
 Twitch: <i class="ti" aria-hidden="true" title="Twitch"></i>
 ```
 
-## Releases
+## Themes
 
-The framework come with different releases. If you want to [optimize the critical rendering path](https://web.dev/defer-non-critical-css/) use the critical and non-critical releases.
+The framework come with different themes.
 
-| Release      | Description                                       | File                    |
-| ------------ | ------------------------------------------------- | ----------------------- |
-| Full         | Default version include all                       | blouse.css              |
-| Medium       | Include all except the icons                      | blouse-m.css            |
-| Small        | No menu, no dark mode, no icons                   | blouse-xs.css           |
-| Critical     | Copy this version in &lt;styles&gt; in the header | blouse-critical.css     |
-| Non-critical | Included asynchronously with JavaScript           | blouse-non-critical.css |
+* Default
+* Warm
+* Metalic
 
-### JsDelivr
+### CDN 
 
-Use cdn.jsdelivr.net/npm/blouse.css@**version**/dist/**file** check the [documentation](https://www.jsdelivr.com/features) in their site, add `.min` for the minified version. Example for the minified **small** release in the 1.2 version:
+Use Pragmore's cdn cdn.pragmore.com/**version**/**theme**/blouse.css?font=**font-family**&family=**generic-family**&size=**font-size**. The default font family is Helvetica, Arial, the default generic family is sans-serif and the default font size is 14pt. Example for the release in the 2.0 version with the warm theme and the Roboto Mono font:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/blouse.css@1.2/dist/blouse-xs.min.css" crossorigin="anonymous">
-```
-
-The **medium** version is the default version of the NPM package. You may use it with
-
-```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/blouse.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.pragmore.com/2.0/warm/blouse.css?font=Roboto+Mono&family=monospace&size=16pt" crossorigin="anonymous">
 ```
 
 -------------------
 
-This wasn't made with ❤️, this was made with 🥚🥚🥚.
+Made with ❤️, and 🥚🥚🥚.
 

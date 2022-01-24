@@ -1,11 +1,9 @@
-$viewport-width: 991px;
-$font-size: 14pt;
-$font-family: Helvetica, Arial, sans;
-
 $font-color: #191017;
-$secondary-color: #505860;
+$neutral-color: #505860;
 $action-color: #794573;
 $link-color: #D03633;
 $action-font-color: #FFF;
 $background-color: #FFF;
 $footer-background-color: #000;
+
+@import 'base';
