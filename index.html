@@ -86,7 +86,10 @@
     current.classList.add('alt');
     el.classList.remove('alt');
     el.classList.add('main');
-    document.querySelector('link[rel=stylesheet]').href = 'dist/' + theme + '.css';
+    const stylesheet = document.createElement('link')
+    stylesheet.rel = 'stylesheet';
+    stylesheet.href = 'dist/' + theme + '.css';
+    document.querySelector('body').append(stylesheet);
     document.getElementById('pathTheme').innerHTML = 'https://cdn.pragmore.com/2.0.0/' + theme + '/blouse.css';
     return false;
   }))</script>
