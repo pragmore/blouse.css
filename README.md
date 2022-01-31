@@ -156,5 +156,5 @@ Use Pragmore's cdn cdn.pragmore.com/**version**/**theme**/blouse.css?font=**font
 
 -------------------
 
-Made with ❤️, and 🥚🥚🥚.
+Made with ❤️, by [Pragmore](https://github.com/pragmore) 
 
