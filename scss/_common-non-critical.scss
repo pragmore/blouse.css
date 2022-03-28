@@ -1,7 +1,7 @@
 a, 
 .btn, 
 button,
-input[type=submit] {
+[type=submit] {
   &:hover,
   &:focus {
     opacity: .7;

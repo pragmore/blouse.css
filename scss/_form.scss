@@ -31,7 +31,7 @@ code {
 
 button,
 .btn,
-input[type=submit] {
+[type=submit] {
   border: 0;
   color: $action-font-color;
   cursor: pointer;
