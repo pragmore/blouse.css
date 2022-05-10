@@ -7,3 +7,19 @@ button,
     opacity: .7;
   }
 }
+
+@media (min-width: $viewport-width) {
+  body {
+    font-size: $font-size + $font-increase; 
+  }
+}
+@media (min-width: $large-width) {
+  body {
+    font-size: $font-size + $font-increase * 2; 
+  }
+}
+@media (min-width: $extra-large-width) {
+  body {
+    font-size: $font-size + $font-increase * 4; 
+  }
+}
