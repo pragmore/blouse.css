@@ -47,3 +47,10 @@ button,
   background: inherit !important;
   color: $action-color !important;
 }
+
+[type=checkbox],
+[type=radio] {
+  vertical-align: middle;
+  position: relative;
+  bottom: 1px;
+}
