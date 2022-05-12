@@ -2,13 +2,13 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   background: $background-color;
   color: $font-color;
   display: flex;
   flex-direction: column;
   font: $font-size $font-family;
-  height: 100vh;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
