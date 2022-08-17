@@ -1,5 +1,5 @@
 @media (prefers-color-scheme: dark) {
-  body, nav {
+  html, body, nav {
     background: lighten($font-color, 5%);
     color: $background-color;
   }
