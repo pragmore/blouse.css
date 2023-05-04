@@ -54,3 +54,7 @@ button,
   position: relative;
   bottom: 1px;
 }
+
+:invalid {
+  border: 2pt solid red;
+}
