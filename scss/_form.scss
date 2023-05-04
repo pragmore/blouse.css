@@ -55,6 +55,10 @@ button,
   bottom: 1px;
 }
 
-:invalid {
-  border: 2pt solid red;
+input,
+select,
+textarea {
+  &:invalid {
+    border: 2pt solid red;
+  }
 }
