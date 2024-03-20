@@ -60,7 +60,7 @@ We use the class names from [Tailwind](https://tailwindcss.com/) in case you lat
 
 ### Menu
 
-```html 
+```html
 <nav>
   <input type="checkbox" id="menu-toggle" aria-hidden="true" />
   <a href="/">My brand</a>
@@ -75,7 +75,7 @@ We use the class names from [Tailwind](https://tailwindcss.com/) in case you lat
 
 ### Footer
 
-```html 
+```html
 <footer>
   <span>Some content</a>
   <span><a href="#">A link</a></span>
@@ -87,7 +87,7 @@ We use the class names from [Tailwind](https://tailwindcss.com/) in case you lat
 
 ### Forms and messages
 
-```html 
+```html
 <a class="btn" href="#">Regular button</a>
 <a class="btn main" href="#">Main button</a>
 <a class="btn alt" href="#">Alternative button</a>
@@ -108,18 +108,18 @@ We use the class names from [Tailwind](https://tailwindcss.com/) in case you lat
 
 Alerts are popup notification showed at the top (over the menu). The close button needs to be implemented with JavaScript. Use `role="alert"` when hidden to make it accesible.
 
-```html 
+```html
 <p class="msg alert ok">This is an alert ok.</p>
 
 <p class="msg alert err" hidden role="alert">
-  This is an alert error. 
+  This is an alert error.
   <b title="Close" aria-label="Close the alert." onclick="this.parentElement.hidden=true">✕</b>
 </p>
 ```
 
 ### Icons
 
-Use emojis for most of the icons you need, like 🖨️, ⚙️ or 📞 But for social networks we needs icons, here you have the most used: 
+Use emojis for most of the icons you need, like 🖨️, ⚙️ or 📞 But for social networks we needs icons, here you have the most used:
 
 ```html
 Twitter: <i class="tw" aria-hidden="true" title="Twitter"></i>
@@ -146,15 +146,14 @@ The framework has different themes.
 * Party
 * Idea
 
-### CDN 
+### CDN
 
-Use Pragmore's cdn cdn.pragmore.com/**version**/**theme**/blouse.css?font=**font-family**&family=**generic-family**&size=**font-size**. The default font family is Helvetica, Arial, the default generic family is sans-serif and the default font size is 14pt. Example for the release in the 2.0 version with the warm theme and the Roboto Mono font:
+Use jsDelivr to load https://cdn.jsdelivr.net/npm/blouse.css@**version**/dist/**theme**.css
 
 ```html
-<link rel="stylesheet" href="https://cdn.pragmore.com/2.0/warm/blouse.css?font=Roboto+Mono&family=monospace&size=16pt" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/blouse.css@2.0.8/dist/warm.css" crossorigin="anonymous">
 ```
 
 -------------------
 
-Made with ❤️, by [Pragmore](https://github.com/pragmore) 
-
+Made with ❤️, by [Pragmore](https://github.com/pragmore)

@@ -1,6 +1,6 @@
 {
   "name": "blouse.css",
-  "version": "2.0.7",
+  "version": "2.0.8",
   "description": "a lightweight mobile first css framework",
   "keywords": [
     "css",
@@ -11,11 +11,11 @@
     "framework",
     "web"
   ],
-  "homepage": "https://4lb0.github.io/blouse.css/",
+  "homepage": "https://pragmore.com/blouse.css/",
   "author": "Rodrigo 'Albo' Arce <albo@pragmore.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/4lb0/blouse.css.git"
+    "url": "git+https://github.com/pragmore/blouse.css.git"
   },
   "license": "MIT",
   "devDependencies": {
