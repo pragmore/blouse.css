@@ -14,7 +14,7 @@ This responsive tiny framework allows you to focus on the content. Don't waste t
 * No JavaScript \*\* ✅
 * Icons for social networks ✅
 
-[See it live](https://pragmore.com/blouse/)
+[See it live](https://pragmore.com/blouse.css/)
 
 \* When minified and compressed with the widely supported brotli algorithm.
 
@@ -44,7 +44,7 @@ Copy the following code or download the [starter template](dist/starter-template
 
 ## Documentation
 
-Use as much semantic HTML as possible, see the [demo](https://pragmore.github.io/blouse.css/) for reference.
+Use as much semantic HTML as possible, see the [demo](https://pragmore.com/blouse.css/) for reference.
 
 ### Utilities
 
