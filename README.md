@@ -151,7 +151,7 @@ The framework has different themes.
 Use jsDelivr to load https://cdn.jsdelivr.net/npm/blouse.css@**version**/dist/**theme**.css
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/blouse.css@2.0.8/dist/warm.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/blouse.css@2.0.9/dist/warm.css" crossorigin="anonymous">
 ```
 
 -------------------
