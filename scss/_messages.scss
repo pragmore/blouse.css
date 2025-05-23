@@ -7,10 +7,12 @@
 .alert {
   padding: 1em;
   z-index: 200;
-  b {
+  button {
     float: right;
     color: #000;
     cursor: pointer;
+    background: none;
+    border: 0;
   }
 }
 

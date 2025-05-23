@@ -208,7 +208,7 @@
         <input type="checkbox" value="1" name="terms">
         Accept terms and conditions
       </label>
-      <button class="main">Save</button>
+      <button class="btn main">Save</button>
     </form>
     
     <h2 id="messages" class="mt-2">Messages</h2>
@@ -225,14 +225,12 @@
       Warning message
     </p>
     <p class="text-center">
-      <a href="#" class="btn" onclick="return document.querySelector('.alert').hidden=false">
-        Show alert message 
-      </a>
+      <button class="btn" popovertarget="my-alert">Show alert message</button>
     </p>
-    <p class="msg alert err" hidden role="alert">
+    <div popover id="my-alert" class="msg alert err" role="alert">
       This is an alert message. 
-      <b title="Close" aria-label="Close the alert." onclick="this.parentElement.hidden=true">✕</b>
-    </p>
+      <button title="Close" aria-label="Close the alert." popovertarget="my-alert" popovertargetaction="hide">✕</button>
+    </div>
     
     <h2 id="icons" class="mt-2">Icons</h2>
     <p>
